@@ -2,7 +2,7 @@
   
    <head>
     <script data-main="scripts/app" src="scripts/require.js"></script>
-  </head>
+     </head>
   
   <style>
     body {
@@ -34,7 +34,6 @@
   </style>
   
 <script>
-const contentful = require('contentful-management')
 
 const client = contentful.createClient({
   accessToken: 'CFPAT-pmvmxatimTKtepeVKzx8BPIqUV0nr8g0S_i1tpIrUZI'
@@ -61,9 +60,14 @@ const body = {
   }
 
 // Create entry
-client.getSpace('16rvqb5dtdsw')
-.then((space) => space.getEnvironment('master'))
-.then((environment) => environment.createEntry('order', body ))
+requirejs(['contentful-management'],function (contentful) {
+  const client = contentful.createClient({
+    accessToken: 'CFPAT-pmvmxatimTKtepeVKzx8BPIqUV0nr8g0S_i1tpIrUZI'
+  })
+  client.getSpace('16rvqb5dtdsw')
+    .then((space) => space.getEnvironment('master'))
+    .then((environment) => environment.createEntry('order', body ))});
+  
   </script>
   
 <body>  
