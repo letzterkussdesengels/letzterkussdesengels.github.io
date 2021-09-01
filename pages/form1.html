@@ -16,23 +16,28 @@
       color: white;
     }
     
+    .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+          }
   </style>
   
 <body>  
  <div> 
    <p style="font-size:30px;font-family:'Brush Script MT', cursive;"> to purchase a copy of RELEASE, please provide the following information and you will receive an email with payment instructions ;)</p>
-  <form action="/buyer_pit.php">
-    
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
-  <label for="email">Email Address:</label><br>
-  <input type="text" id="email" name="email"><br>
-  <label for="mail_address">Mailing Address:</label><br>
-  <input type="text" id="mail_address" name="mail_address"><br><br>
-  <input type="checkbox" id="mailinglist" name="mailinglist" value="yes">
-  <label for="mailinglist"> I would like to receive emails when new releases are available</label>
+  <div class="column">
+   <form action="/buyer_pit.php"> 
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="email">Email Address:</label><br>
+      <input type="text" id="email" name="email"><br>
+      <label for="mail_address">Mailing Address:</label><br>
+      <input type="text" id="mail_address" name="mail_address"><br><br>
+      <input type="checkbox" id="mailinglist" name="mailinglist" value="yes">
+      <label for="mailinglist"> I would like to receive emails when new releases are available</label>
     <br>
     <br>
     <br>
@@ -40,8 +45,10 @@
   <input type="submit" value="Submit">
     
     </form>
-   
-   
+        </div>
+   <div class="column">
+     <p> some text </p>
+     </div>
    
     </div>
   </body>
