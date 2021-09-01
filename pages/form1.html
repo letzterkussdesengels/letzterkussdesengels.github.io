@@ -21,10 +21,15 @@
   width: 50%;
   padding: 10px;
           }
+    .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   </style>
   
 <body>  
- <div> 
+ <div class="row"> 
    <p style="font-size:30px;font-family:'Brush Script MT', cursive;"> to purchase a copy of RELEASE, please provide the following information and you will receive an email with payment instructions ;)</p>
   <div class="column">
    <form action="/buyer_pit.php"> 
