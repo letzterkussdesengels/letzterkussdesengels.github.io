@@ -35,10 +35,7 @@ const client = contentful.createClient({
   accessToken: 'CFPAT-pmvmxatimTKtepeVKzx8BPIqUV0nr8g0S_i1tpIrUZI'
 })
 
-// Create entry
-client.getSpace('16rvqb5dtdsw')
-.then((space) => space.getEnvironment('master'))
-.then((environment) => environment.createEntry('order', {
+const body = {
   fields: {
     firstName: {
             "en-US": "test4"
@@ -57,7 +54,11 @@ client.getSpace('16rvqb5dtdsw')
         },
     }
   }
-))
+
+// Create entry
+client.getSpace('16rvqb5dtdsw')
+.then((space) => space.getEnvironment('master'))
+.then((environment) => environment.createEntry('order', body ))
   </script>
   
 <body>  
