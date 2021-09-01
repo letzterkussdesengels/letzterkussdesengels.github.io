@@ -28,6 +28,38 @@
 }
   </style>
   
+<script>
+const contentful = require('contentful-management')
+
+const client = contentful.createClient({
+  accessToken: 'CFPAT-pmvmxatimTKtepeVKzx8BPIqUV0nr8g0S_i1tpIrUZI'
+})
+
+// Create entry
+client.getSpace('16rvqb5dtdsw')
+.then((space) => space.getEnvironment('master'))
+.then((environment) => environment.createEntry('order', {
+  fields: {
+    firstName: {
+            "en-US": "test4"
+        },
+     lastName: {
+            "en-US": "test4"
+        },
+     email: {
+            "en-US": "test4"
+        },
+     mailing_address: {
+            "en-US": "test4"
+        },
+     optInNewReleases: {
+            "en-US": "yes"
+        },
+    }
+  }
+}))
+  </script>
+  
 <body>  
  <div class="row"> 
    <p style="font-size:30px;font-family:'Brush Script MT', cursive;"> to purchase a copy of RELEASE, please provide the following information and you will receive an email with payment instructions ;)</p>
