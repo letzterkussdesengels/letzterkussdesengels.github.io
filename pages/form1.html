@@ -1,45 +1,11 @@
+<!DOCTYPE html>
 <html>
   
-   <head>
-    <script data-main="scripts/app" src="scripts/require.js"></script>
-     </head>
+<head>
+  <link rel="stylesheet" href="formstyle.css">
+  <script data-main="scripts/app" src="scripts/require.js"></script>
+    </head>
   
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      background-color: black;
-    }
-    div {
-      position: top-center;
-      top-margin: 100px;
-    }
-    p {
-      text-align: center;
-      color: white;
-    }
-    form {
-      position: center;
-      color: white;
-    }
-    
-    .column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-          }
-      .column2 {
-  float: right;
-  width: 50%;
-  padding: 10px;
-          }
-    .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-  </style>
   
 <script>
 
@@ -76,10 +42,15 @@ requirejs(['contentful-management'],function (contentful) {
   </script>
   
 <body>  
- <div class="row"> 
-   <p style="font-size:30px;font-family:'Brush Script MT', cursive;"> to purchase a copy of RELEASE, please provide the following information and you will receive an email with payment instructions ;)</p>
-  <div class="column">
+ <div class="grid"> 
+  <div class="header">
+   <p style="font-size:30px;font-family:'Arial', cursive;"> to buy copy fill out form hit submit ;)</p>
+   </div>
+  <div class="leftcolumn">
    <form action="mailto:letzterkussdesengels@gmail.com" method="post" enctype="text/plain"> 
+    <br>
+    <br>
+    <br>
       <label for="fname">First name:</label><br>
       <input type="text" id="fname" name="fname"><br>
       <label for="lname">Last name:</label><br>
@@ -87,8 +58,10 @@ requirejs(['contentful-management'],function (contentful) {
       <label for="email">Email Address:</label><br>
       <input type="text" id="email" name="email"><br>
       <label for="mail_address">Mailing Address:</label><br>
-      <input type="text" id="mail_address" name="mail_address"><br>
-     <p style="font-size:16px;font-family:'Arial', italic;text-align: left;"> shipping only available within the EU </p>
+      <textarea rows = "5" cols = "40" for="mail_address"></textarea>      
+      <br>
+      <br>
+     <p style="font-size:16px;font-family:'monospace;';text-align: left; color:yellow;"> shipping only available within the EU </p>
        <br><br>
       <input type="checkbox" id="mailinglist" name="mailinglist" value="yes">
       <label for="mailinglist"> email me when new releases are available</label>
@@ -100,9 +73,13 @@ requirejs(['contentful-management'],function (contentful) {
     
     </form>
         </div>
-   <div class="column2">
-     <p> hope this works </p>
-     <!-- <img src="Scan 33.jpeg" alt="secretlifer"> -->
+   <div class="rightcolumn">
+     <img src="secretcover2.jpg" style="height:100%;width:100%;" alt="secretlifer">
+     </div>
+     <div class="footer">
+        <a href="../index.html">
+          <p style="text-align: right;"> ----> back </p>
+        </a>
      </div>
    
     </div>
