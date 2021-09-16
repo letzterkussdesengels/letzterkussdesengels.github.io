@@ -70,13 +70,28 @@
         }
         console.log("3")
         console.log(body)
-        let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+
+        try {
+          let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
                 method: 'POST', // or 'PUT'
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(body),
         })
+        } catch (error) {
+          console.error(error);
+          // expected output: ReferenceError: nonExistentFunction is not defined
+          // Note - error messages will vary depending on browser
+        }
+
+        // let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+        //         method: 'POST', // or 'PUT'
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //         },
+        //         body: JSON.stringify(body),
+        // })
         console.log("4")
 
         let text = await response.text(); // read response body as text
