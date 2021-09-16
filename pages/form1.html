@@ -9,7 +9,7 @@
   
 <script>
   console.log("1")
-  formElem.onsubmit = async (e) => {
+  document.querySelector("#formElem").onsubmit = async (e) => {
       console.log("2")
       var form = document.querySelector("#formElem");
      // var form = document.forms[0];
@@ -32,17 +32,7 @@
         console.log("4")
 
         let text = await response.text(); // read response body as text
-        document.querySelector("#decoded").innerHTML = text;
-  }
-
-// Create entry
-// requirejs(['contentful-management'],function (contentful) {
-//   const client = contentful.createClient({
-//     accessToken: 'CFPAT-pmvmxatimTKtepeVKzx8BPIqUV0nr8g0S_i1tpIrUZI'
-//   })
-//   client.getSpace('16rvqb5dtdsw')
-//     .then((space) => space.getEnvironment('master'))
-//     .then((environment) => environment.createEntry('order', body ))});  
+        document.querySelector("#decoded").innerHTML = text;}
   
   </script>
   
