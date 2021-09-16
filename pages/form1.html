@@ -3,41 +3,45 @@
   
 <head>
   <link rel="stylesheet" href="formstyle.css">
-  <script data-main="scripts/app" src="scripts/require.js"></script>
+ <!--  <script data-main="scripts/app" src="scripts/require.js"></script> -->
     </head>
   
   
 <script>
+  console.log("1")
+  formElem.onsubmit = async (e) => {
+      console.log("2")
+      var form = document.querySelector("#formElem");
+     // var form = document.forms[0];
 
+        body = {
+          firstName : form.querySelector('input[name="firstName"]').value,
+          lastName : form.querySelector('input[name="lastName"]').value,
+          email : form.querySelector('input[name="email"]').value,
+          mailingAddress : form.querySelector('input[name="mailingAddress"]').value,
+          optInNewReleases : form.querySelector('input[name="optInNewReleases"]').value, 
+        }
+        console.log("3")
+        let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+                method: 'POST', // or 'PUT'
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(body),
+        })
+        console.log("4")
 
-const body = {
-  fields: {
-    firstName: {
-            "en-US": "test4"
-        },
-     lastName: {
-            "en-US": "test4"
-        },
-     email: {
-            "en-US": "test4"
-        },
-     mailing_address: {
-            "en-US": "test4"
-        },
-     optInNewReleases: {
-            "en-US": "yes"
-        },
-    }
-  }
+        let text = await response.text(); // read response body as text
+        document.querySelector("#decoded").innerHTML = text;
 
 // Create entry
-requirejs(['contentful-management'],function (contentful) {
-  const client = contentful.createClient({
-    accessToken: 'CFPAT-pmvmxatimTKtepeVKzx8BPIqUV0nr8g0S_i1tpIrUZI'
-  })
-  client.getSpace('16rvqb5dtdsw')
-    .then((space) => space.getEnvironment('master'))
-    .then((environment) => environment.createEntry('order', body ))});
+// requirejs(['contentful-management'],function (contentful) {
+//   const client = contentful.createClient({
+//     accessToken: 'CFPAT-pmvmxatimTKtepeVKzx8BPIqUV0nr8g0S_i1tpIrUZI'
+//   })
+//   client.getSpace('16rvqb5dtdsw')
+//     .then((space) => space.getEnvironment('master'))
+//     .then((environment) => environment.createEntry('order', body ))});  
   
   </script>
   
@@ -47,29 +51,29 @@ requirejs(['contentful-management'],function (contentful) {
    <p style="font-size:30px;font-family:'Arial', cursive;"> to buy copy fill out form hit submit (๑•́ ₃ •̀๑) </p>
    </div>
   <div class="leftcolumn">
-   <form action="mailto:letzterkussdesengels@gmail.com" method="post" enctype="text/plain"> 
+   <form id="formElem"> 
     <br>
     <br>
     <br>
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname"><br>
+      <label for="firstName">First name:</label><br>
+      <input type="text" id="firstName" name="firstName"><br>
+      <label for="lastName">Last name:</label><br>
+      <input type="text" id="lastName" name="lastName"><br>
       <label for="email">Email Address:</label><br>
       <input type="text" id="email" name="email"><br>
-      <label for="mail_address">Mailing Address:</label><br>
-      <textarea rows = "5" cols = "40" for="mail_address"></textarea>      
+      <label for="mailingAddress">Mailing Address:</label><br>
+      <textarea rows = "5" cols = "40" for="mailingAddress"></textarea>      
       <br>
       <br>
      <p style="font-size:16px;font-family:'monospace;';text-align: left; color:yellow;"> shipping only available within the EU </p>
        <br><br>
-      <input type="checkbox" id="mailinglist" name="mailinglist" value="yes">
-      <label for="mailinglist"> email me when new releases are available</label>
+      <input type="checkbox" id="mailingList" name="mailingList" value="yes">
+      <label for="mailingList"> email me when new releases are available</label>
     <br>
     <br>
     <br>
     <br>
-  <input type="submit" value="Submit">
+  <input id="submit" type="submit" value="Submit">
     
     </form>
         </div>
