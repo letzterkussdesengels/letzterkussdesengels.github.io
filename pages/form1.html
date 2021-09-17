@@ -69,7 +69,7 @@
         console.log("3")
         console.log(body)
 
-         try {
+       try {
           let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
                 method: 'POST',
                 headers: {
@@ -77,9 +77,9 @@
                 },
                 body: JSON.stringify(body),
               })
-         }
+            }
           catch (error) {
-            if (error.message == "Sold out") {
+            if (error.errorMessage == "sold out") {
               {window.location = "soldOut.html";}
             }
             else {
@@ -88,7 +88,8 @@
               }
             } 
           
-        console.log("4")}
+          
+        console.log("4")} 
 
 
       
