@@ -53,9 +53,7 @@
   </body>
 
   <script>
-  console.log("1")
   document.getElementById("submit").onclick =  async (e) => {
-      console.log("2")
       // var form = document.getElementById("formElem");
      // var form = document.forms[0];
 
@@ -66,8 +64,6 @@
           mailingAddress : document.getElementById("mailingAddress").value,
           optInNewReleases : document.getElementById("mailingList").value, 
         }
-        console.log("3")
-        console.log(body)
 
        try {
           let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
@@ -90,7 +86,7 @@
             } 
           
           
-        console.log("4")} 
+        } 
 
 
       
