@@ -71,7 +71,7 @@
 
          try {
           let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
-                method: 'POST'
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
@@ -85,9 +85,8 @@
             else {
               console.log(response);
               console.log(error.message);
-            }
-
-            }
+              }
+            } 
           
         console.log("4")}
 
