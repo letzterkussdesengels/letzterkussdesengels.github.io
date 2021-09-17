@@ -80,11 +80,14 @@
               })
          }
           catch (error) {
-            if (error.message == "Sold out") 
+            if (error.message == "Sold out") {
               {window.location = "soldOut.html";}
+            }
+            else {
+              console.error(error);
+            }
 
             }
-           console.error(error);
           
         console.log("4")}
 
