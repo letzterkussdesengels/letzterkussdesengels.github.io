@@ -65,7 +65,7 @@
           optInNewReleases : document.getElementById("mailingList").value, 
         }
 
-       try {
+    
           let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
                 method: 'POST',
                 headers: {
@@ -73,20 +73,16 @@
                 },
                 body: JSON.stringify(body),
               })
-            }
-          catch (error) {
-            if (error.errorMessage == "sold out") {
+
+          if (response.statusCode == 400) {
               console.log(errorMessage);
-              {window.location = "soldOut.html";}
-            }
-            else {
+              window.location = "soldOut.html";
+          } else {
               console.log(response);
               console.log(error.message);
               }
+          
             } 
-          
-          
-        } 
 
 
       
