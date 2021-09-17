@@ -80,6 +80,7 @@
             }
           catch (error) {
             if (error.errorMessage == "sold out") {
+              console.log(errorMessage);
               {window.location = "soldOut.html";}
             }
             else {
