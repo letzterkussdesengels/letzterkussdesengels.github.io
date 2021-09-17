@@ -14,7 +14,7 @@
    <p style="font-size:30px;font-family:'Arial', cursive;"> to buy copy fill out form hit submit (๑•́ ₃ •̀๑) </p>
    </div>
   <div class="leftcolumn">
-           <form id="formElem" action="https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders"> 
+           <form id="formElem" action="orderComplete.html"> 
             <br>
             <br>
             <br>
@@ -57,7 +57,7 @@
   document.getElementById("submit").onclick =  async (e) => {
       console.log("2")
       console.log(e)
-      var form = document.getElementById("formElem");
+      // var form = document.getElementById("formElem");
      // var form = document.forms[0];
 
         body = {
