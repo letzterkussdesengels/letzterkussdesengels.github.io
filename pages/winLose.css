@@ -11,7 +11,7 @@
   grid-template-rows: 50px 700px 150px;
   grid-template-areas: 
     ". header header ." 
-    ". leftcolumn rightcolumn ."
+    ". leftcolumn leftcolumn ."
     ". footer footer .";
   }
 
