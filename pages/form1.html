@@ -73,6 +73,8 @@
                 },
                 body: JSON.stringify(body),
               })
+         
+          console.log(response.body);
 
          if ((response.Info) == "sold out error") {
               console.log("I am sold out");
