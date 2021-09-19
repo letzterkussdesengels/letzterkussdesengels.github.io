@@ -74,8 +74,8 @@
                 body: JSON.stringify(body),
               })
 
-          if (response.getElementById("statusCode") == 400) {
-              console.log("I am here");
+         if ((response.Info) == "sold out error") {
+              console.log("I am sold out");
               window.location = "soldOut.html";
           } else {
               console.log(response);
@@ -83,6 +83,7 @@
               }
           
             } 
+
 
 
       
