@@ -81,8 +81,9 @@
           }
 
           console.log(response.body);
+          // console.log((response.body) == "sold out")
 
-          if ((response.Info) == "sold out error") {
+          if ((response.body) == "sold out") {
               console.log("I am sold out");
               window.location = "soldOut.html";
           } else {
