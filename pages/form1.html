@@ -30,8 +30,10 @@
               <br>
              <p style="font-size:16px;font-family:'monospace;';text-align: left; color:yellow;"> shipping only available within the EU </p>
                <br><br>
-              <!--<input type="radio" id="mailingList" name="optIb">
-               <label for="html">email me when new releases are available</label>-->
+               <input type="radio" id="mailingList" name="optIb">
+               <label for="html">email me when new releases are available</label>
+              <!-- <input type="checkbox" id="mailingList" name="mailingList" value="true">
+              <label for="mailingList"> email me when new releases are available</label> -->
             <br>
             <br>
             <br>
@@ -62,21 +64,25 @@
           lastName : document.getElementById("lastName").value,
           email : document.getElementById("email").value,
           mailingAddress : document.getElementById("mailingAddress").value,
-          <!--optInNewReleases : document.getElementById("mailingList").value,--> 
+          optInNewReleases : document.getElementById("mailingList").value, 
         }
 
     
-          let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+          try {
+            let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(body),
               })
-         
+          } catch (e) {
+            console.log(e)
+          }
+
           console.log(response.body);
 
-         if ((response.Info) == "sold out error") {
+          if ((response.Info) == "sold out error") {
               console.log("I am sold out");
               window.location = "soldOut.html";
           } else {
@@ -85,7 +91,6 @@
               }
           
             } 
-
 
 
       
