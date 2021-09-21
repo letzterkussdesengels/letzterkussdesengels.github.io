@@ -14,7 +14,7 @@
    <p style="font-size:30px;font-family:'Arial', cursive;"> to buy copy fill out form hit submit (๑•́ ₃ •̀๑) </p>
    </div>
   <div class="leftcolumn">
-           <form id="formElem" action="orderComplete.html"> 
+           <form id="formElem" > 
             <br>
             <br>
             <br>
@@ -88,7 +88,7 @@
               window.location = "soldOut.html";
           } else {
               console.log(response);
-              console.log(error.message);
+              window.location = "orderComplete.html";
               }
           
             } 
