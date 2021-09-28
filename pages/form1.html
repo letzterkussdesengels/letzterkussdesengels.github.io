@@ -38,7 +38,7 @@
             <br>
             <br>
             <br>
-          <input id="submit" type="submit" value="Submit">
+          <input id="submit" type="button" value="Submit">
             
             </form>
         </div>
@@ -56,48 +56,28 @@
 
   <script>
   document.getElementById("submit").onclick =  async (e) => {
-      // var form = document.getElementById("formElem");
-     // var form = document.forms[0];
-
-        body = {
+      const body = {
           firstName : document.getElementById("firstName").value,
           lastName : document.getElementById("lastName").value,
           email : document.getElementById("email").value,
           mailingAddress : document.getElementById("mailingAddress").value,
-          // optInNewReleases : document.getElementById("mailingList").value, 
         }
 
-    
-          try {
-            let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(body),
-              })
-          } catch (e) {
-            console.log(e)
-          }
-
-          console.log(response.body);
-          // console.log((response.body) == "sold out")
-
-          if ((response.body) == "sold out") {
-              console.log("I am sold out");
-              window.location = "soldOut.html";
-          } else {
-              console.log(response);
-              window.location = "orderComplete.html";
-              }
-          
-            } 
-
-
-      
-
-        // let text = await response.text(); // read response body as text
-        // document.querySelector("#decoded").innerHTML = text;}
+        let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+            method: 'POST',
+            body: JSON.stringify(body),
+        });
+ 
+        if (response.status === 400) {
+            // console.log("I am sold out");
+            window.location = "soldOut.html";
+        } else if (response.status === 200) {
+            // console.log(response);
+            window.location = "orderComplete.html";
+        } else {
+          console.error('Network Error ):');
+        }
+    }
   
   </script>
   
