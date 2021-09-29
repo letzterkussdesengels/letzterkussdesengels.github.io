@@ -1,28 +1,86 @@
  *{
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(81, 90, 108);
+  color: white;
 
  }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 400px 400px 1fr;
-  grid-template-rows: 50px 600px 150px;
+  grid-template-columns: 1fr 100px 200px 200px 200px 1fr;
+  grid-template-rows: 150px 100px 100px 100px 150px;
   grid-template-areas: 
-    ". header header ." 
-    ". leftcolumn rightcolumn ."
-    ". footer footer .";
+    ". head head head head ." 
+    ". ib1 tb1 tb1 tb1 ."
+    ". ib2 tb2 tb2 tb2 ."
+    ". ib3 tb3 tb3 tb3 ."
+    ". foot foot foot foot .";
   }
 
-
-
 .header { 
+  grid-area: head;
+  padding: 10px;
+  text-align: center;
+ 
+}
+
+.imagebox1 { 
+  grid-area: ib1;
+  border-style: groove;
+
+
+ 
+}
+
+.imagebox2 { 
+  grid-area: ib2;
+  border-style: groove;
+
+ 
+}
+
+.imagebox3 { 
+  grid-area: ib3;
+/*  border-style: groove;
+*/
+ 
+}
+
+.textbox1  { 
+  padding: 5px;
+  grid-area: tb1;
+  border-style: groove;
+ 
+}
+
+.textbox2  { 
+  padding: 5px;
+  grid-area: tb2;
+  border-style: groove;
+}
+
+.textbox3  { 
+  padding: 5px;
+  grid-area: tb3;
+/*  border-style: groove;
+*/ 
+}
+
+.footer  { 
+  grid-area: foot;
+ 
+}
+
+
+
+
+/*.header { 
   grid-area: header;
   background-color:black;
 }
 
-.leftcolumn {
+.leftcolumnA {
   grid-area: leftcolumn;
   background-color:black;
   /*justify-content: center;*/
@@ -32,7 +90,7 @@
  
 }
 
-.leftcolumn a {
+/*.leftcolumnA a {
    min-width: 100%;
    min-height: 100%;
    object-fit: fill;
@@ -40,7 +98,7 @@
 }
 
 
-.rightcolumn {
+.rightcolumnA {
   padding-top: 100px;
   grid-area: rightcolumn;
   background-color:black;
@@ -52,8 +110,8 @@
   grid-area: footer;
   background-color:black;
 
-}
-.buylink:hover + div {
+}*/
+/*.buylink:hover + div {
     display: block;
 }
  .click {
@@ -63,7 +121,7 @@
   height: 100%;
   padding: 20px;
   color: black;
-}
+}*/
 
 /*.fill {
     display: flex;
