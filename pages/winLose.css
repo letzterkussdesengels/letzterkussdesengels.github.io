@@ -18,7 +18,6 @@
 
 .header { 
   grid-area: header;
-  background-color:black;
   text-align: center;
   padding: 20px;
 
@@ -27,7 +26,6 @@
 
 .leftcolumn {
   grid-area: leftcolumn;
-  background-color:black;
   /*justify-content: center;*/
   align-items: center;
   text-align: center;
@@ -48,14 +46,12 @@
 .rightcolumn {
   padding-top: 100px;
   grid-area: rightcolumn;
-  background-color:black;
 
 
 }
 
 .footer {
   grid-area: footer;
-  background-color:black;
 
 }
 .buylink:hover + div {
