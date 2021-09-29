@@ -1,14 +1,14 @@
  *{
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(81, 90, 108);
   color: white;
 
  }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 400px 400px 1fr;
+  grid-template-columns: 1fr 400px 500px 1fr;
   grid-template-rows: 75px 500px 150px;
   grid-template-areas: 
     ". header header ." 
@@ -21,13 +21,11 @@
 .header { 
   padding: 10px;
   grid-area: header;
-  background-color:black;
 }
 
 .leftcolumn {
   padding: 10px;
   grid-area: leftcolumn;
-  background-color:black;
 /*  justify-content: center;
 */  align-items: center;
   overflow: hidden
@@ -45,7 +43,6 @@
 .rightcolumn {
   padding: 10px;
   grid-area: rightcolumn;
-  background-color:black;
 
 
 }
@@ -53,7 +50,6 @@
 .footer {
   padding: 10px;
   grid-area: footer;
-  background-color:black;
 
 }
 
