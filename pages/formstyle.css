@@ -21,6 +21,7 @@
 .header { 
   padding: 10px;
   grid-area: header;
+  text-align: right;
 }
 
 .leftcolumn {
