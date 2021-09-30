@@ -59,28 +59,35 @@
 
   <script>
   document.getElementById("submit").onclick =  async (e) => {
-      const body = {
-          firstName : document.getElementById("firstName").value,
-          lastName : document.getElementById("lastName").value,
-          email : document.getElementById("email").value,
-          mailingAddress : document.getElementById("mailingAddress").value,
-        }
+     if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
+          document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "") {  
 
-        let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
-            method: 'POST',
-            body: JSON.stringify(body),
-        });
- 
-        if (response.status === 400) {
-            // console.log("I am sold out");
-            window.location = "soldOut.html";
-        } else if (response.status === 200) {
-            // console.log(response);
-            window.location = "orderComplete.html";
-        } else {
-          console.error('Network Error ):');
+                const body = {
+                  firstName : document.getElementById("firstName").value,
+                  lastName : document.getElementById("lastName").value,
+                  email : document.getElementById("email").value,
+                  mailingAddress : document.getElementById("mailingAddress").value,
+                }
+
+                let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                });
+         
+                if (response.status === 400) {
+                    // console.log("I am sold out");
+                    window.location = "soldOut.html";
+                } else if (response.status === 200) {
+                    // console.log(response);
+                    window.location = "orderComplete.html";
+                } else {
+                  console.error('Network Error ):');
+                }
+            }
+        else {
+          alert("you forgot something");
         }
-    }
+      }
   
   </script>
   
