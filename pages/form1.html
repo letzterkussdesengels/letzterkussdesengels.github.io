@@ -59,10 +59,12 @@
 
   <script>
   document.getElementById("submit").onclick =  async (e) => {
-     if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
+       
+      if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
           document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "") {  
 
                 const body = {
+                  key : "vd016",
                   firstName : document.getElementById("firstName").value,
                   lastName : document.getElementById("lastName").value,
                   email : document.getElementById("email").value,
