@@ -7,14 +7,24 @@
  }
 
 .grid {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
   display: grid;
+  background-position: center;
   grid-template-columns: 1fr 100px 200px 200px 200px 1fr;
-  grid-template-rows: 150px 100px 100px 100px 150px;
+  grid-template-rows: 150px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 150px;
   grid-template-areas: 
     ". head head head head ." 
     ". ib1 tb1 tb1 tb1 ."
     ". ib2 tb2 tb2 tb2 ."
     ". ib3 tb3 tb3 tb3 ."
+    ". ib4 tb4 tb4 tb4 ."
+    ". ib5 tb5 tb5 tb5 ."
+    ". ib6 tb6 tb6 tb6 ."
+    ". ib7 tb7 tb7 tb7 ."
+    ". ib8 tb8 tb8 tb8 ."
+    ". ib9 tb9 tb9 tb9 ."
+    ". ib10 tb10 tb10 tb10 ."
     ". foot foot foot foot .";
   }
 
@@ -28,6 +38,8 @@
 .imagebox1 { 
   grid-area: ib1;
   border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
 
 
  
@@ -36,14 +48,73 @@
 .imagebox2 { 
   grid-area: ib2;
   border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
 
  
 }
 
 .imagebox3 { 
   grid-area: ib3;
-/*  border-style: groove;
-*/
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
+ 
+}
+
+.imagebox4 { 
+  grid-area: ib4;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
+ 
+}
+
+.imagebox5 { 
+  grid-area: ib5;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
+ 
+}
+
+.imagebox6 { 
+  grid-area: ib6;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
+ 
+}
+
+.imagebox7 { 
+  grid-area: ib7;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
+ 
+}
+
+.imagebox8 { 
+  grid-area: ib8;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
+ 
+}
+
+.imagebox9 { 
+  grid-area: ib9;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
+ 
+}
+
+.imagebox10 { 
+  grid-area: ib10;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+  padding: 2px;
  
 }
 
@@ -51,6 +122,7 @@
   padding: 5px;
   grid-area: tb1;
   border-style: groove;
+  background-color: rgb(81, 90, 108);
  
 }
 
@@ -58,13 +130,63 @@
   padding: 5px;
   grid-area: tb2;
   border-style: groove;
+  background-color: rgb(81, 90, 108);
 }
 
 .textbox3  { 
-  padding: 5px;
+    padding: 5px;
   grid-area: tb3;
-/*  border-style: groove;
-*/ 
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+}
+
+.textbox4  { 
+    padding: 5px;
+  grid-area: tb4;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+}
+
+.textbox5  { 
+    padding: 5px;
+  grid-area: tb5;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+}
+
+.textbox6  { 
+    padding: 5px;
+  grid-area: tb6;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+}
+
+.textbox7  { 
+    padding: 5px;
+  grid-area: tb7;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+}
+
+.textbox8  { 
+    padding: 5px;
+  grid-area: tb8;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+}
+
+.textbox9  { 
+    padding: 5px;
+  grid-area: tb9;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
+}
+
+.textbox10  { 
+    padding: 5px;
+  grid-area: tb10;
+  border-style: groove;
+  background-color: rgb(81, 90, 108);
 }
 
 .footer  { 
@@ -75,93 +197,3 @@
 
 
 
-/*.header { 
-  grid-area: header;
-  background-color:black;
-}
-
-.leftcolumnA {
-  grid-area: leftcolumn;
-  background-color:black;
-  /*justify-content: center;*/
-  /*align-items: right;*/
-  overflow: hidden
-
- 
-}
-
-/*.leftcolumnA a {
-   min-width: 100%;
-   min-height: 100%;
-   object-fit: fill;
-    
-}
-
-
-.rightcolumnA {
-  padding-top: 100px;
-  grid-area: rightcolumn;
-  background-color:black;
-
-
-}
-
-.footer {
-  grid-area: footer;
-  background-color:black;
-
-}*/
-/*.buylink:hover + div {
-    display: block;
-}
- .click {
-  background-color: yellow;
-  background-position: center top;
-  max-width: 100%;
-  height: 100%;
-  padding: 20px;
-  color: black;
-}*/
-
-/*.fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-
-.fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
-*/
- /*img {
-  max-width: auto;
-  height: 100%;
-    
-}
-  .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-  .buylink {
-
-}
-  .buylink:hover + div {
-    display: block;
-}
-  .click {
-  background-color: yellow;
-  background-position: center top;
-  max-width: 100%;
-  height: 100%;
-  padding: 20px;
-  display: none;
-}
-  
-  .frame {
-    margin:40px;
-  }*/
