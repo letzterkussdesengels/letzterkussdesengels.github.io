@@ -6,13 +6,22 @@
 
  }
 
+ .banner {
+  background-color:yellow;
+  color:black;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+ }
+
+
 .grid {
   /*background-image: url('background.jpg');*/
   background-repeat: no-repeat;
   display: grid;
   background-position: center;
   grid-template-columns: 1fr 100px 200px 200px 200px 1fr;
-  grid-template-rows: 150px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 150px;
+  grid-template-rows: 120px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 150px;
   grid-template-areas: 
     ". head head head head ." 
     ". ib1 tb1 tb1 tb1 ."
@@ -32,6 +41,7 @@
   grid-area: head;
   padding: 10px;
   text-align: center;
+
  
 }
 
