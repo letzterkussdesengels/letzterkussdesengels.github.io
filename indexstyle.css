@@ -45,6 +45,7 @@
  
 }
 
+
 .imagebox2 { 
   grid-area: ib2;
   border-style: groove;
@@ -54,6 +55,8 @@
  
 }
 
+
+
 .imagebox3 { 
   grid-area: ib3;
   border-style: groove;
@@ -61,6 +64,7 @@
   padding: 2px;
  
 }
+
 
 .imagebox4 { 
   grid-area: ib4;
@@ -70,6 +74,7 @@
  
 }
 
+
 .imagebox5 { 
   grid-area: ib5;
   border-style: groove;
@@ -77,6 +82,7 @@
   padding: 2px;
  
 }
+
 
 .imagebox6 { 
   grid-area: ib6;
@@ -86,6 +92,8 @@
  
 }
 
+
+
 .imagebox7 { 
   grid-area: ib7;
   border-style: groove;
@@ -93,6 +101,7 @@
   padding: 2px;
  
 }
+
 
 .imagebox8 { 
   grid-area: ib8;
@@ -102,6 +111,8 @@
  
 }
 
+
+
 .imagebox9 { 
   grid-area: ib9;
   border-style: groove;
@@ -109,6 +120,7 @@
   padding: 2px;
  
 }
+
 
 .imagebox10 { 
   grid-area: ib10;
@@ -118,11 +130,18 @@
  
 }
 
+
 .textbox1  { 
   padding: 5px;
   grid-area: tb1;
   border-style: groove;
   background-color: rgb(81, 90, 108);
+ 
+}
+
+.textbox1:hover { 
+  transform: scale(1.25);
+
  
 }
 
@@ -133,11 +152,21 @@
   background-color: rgb(81, 90, 108);
 }
 
+.textbox2:hover { 
+  transform: scale(1.25);
+ 
+}
+
 .textbox3  { 
     padding: 5px;
   grid-area: tb3;
   border-style: groove;
   background-color: rgb(81, 90, 108);
+}
+
+.textbox3:hover { 
+  transform: scale(1.25);
+ 
 }
 
 .textbox4  { 
@@ -147,11 +176,21 @@
   background-color: rgb(81, 90, 108);
 }
 
+.textbox4:hover { 
+  transform: scale(1.25);
+ 
+}
+
 .textbox5  { 
     padding: 5px;
   grid-area: tb5;
   border-style: groove;
   background-color: rgb(81, 90, 108);
+}
+
+.textbox5:hover { 
+  transform: scale(1.25);
+ 
 }
 
 .textbox6  { 
@@ -161,11 +200,20 @@
   background-color: rgb(81, 90, 108);
 }
 
+.textbox6:hover { 
+  transform: scale(1.25);
+ 
+}
 .textbox7  { 
     padding: 5px;
   grid-area: tb7;
   border-style: groove;
   background-color: rgb(81, 90, 108);
+}
+
+.textbox7:hover { 
+  transform: scale(1.25);
+ 
 }
 
 .textbox8  { 
@@ -175,6 +223,11 @@
   background-color: rgb(81, 90, 108);
 }
 
+.textbox8:hover { 
+  transform: scale(1.25);
+ 
+}
+
 .textbox9  { 
     padding: 5px;
   grid-area: tb9;
@@ -182,11 +235,21 @@
   background-color: rgb(81, 90, 108);
 }
 
+.textbox9:hover { 
+  transform: scale(1.25);
+ 
+}
+
 .textbox10  { 
     padding: 5px;
   grid-area: tb10;
   border-style: groove;
   background-color: rgb(81, 90, 108);
+}
+
+.textbox10:hover { 
+  transform: scale(1.25);
+ 
 }
 
 .footer  { 
