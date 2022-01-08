@@ -5,6 +5,15 @@
   color: white;
 
  }
+ 
+ .banner {
+  background-color:yellow;
+  color:black;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+ }
+
 
 .grid {
   display: grid;
