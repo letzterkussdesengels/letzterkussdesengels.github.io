@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link rel="stylesheet" href="formstyle.css">
+    </head>
+  
+  
+
+  
+<body>  
+ <div class="grid"> 
+  <div class="header">
+    <p> letzterkussdesengels.site </p>
+   </div>
+  <div class="leftcolumn">
+    <p style="font-size:12px;font-family:'arial';font-style: bold;text-align:left; color:white;"> released by Ectopic</p>
+    <p style="font-size:24px;font-family:'monospace;';text-align: left; color:white;"> Hasserfüllt - ECT-009 - Vinyl 10" </p>
+    <br>
+    <p style="font-size:14px;font-family:'arial;';text-align: left; color:white;"> 12EUR + Shipping </p>
+           <form id="formElem" > 
+            
+            <br>
+            <br>
+              <label for="firstName">First name:</label><br>
+              <input type="text" id="firstName" name="firstName"><br>
+              <label for="lastName">Last name:</label><br>
+              <input type="text" id="lastName" name="lastName"><br>
+              <label for="email">Email Address:</label><br>
+              <input type="text" id="email" name="email"><br>
+              <label for="mailingAddress">Mailing Address:</label><br>
+              <textarea rows = "5" id="mailingAddress" cols = "40" for="mailingAddress"></textarea>      
+              <br>
+              
+              <p style="font-size:12px;font-family:'monospace;';text-align: left; color:white;"> *we'll figure out your shipping costs and email you the total along with instructions for how to pay </p>
+              <br>
+              <p style="font-size:18px;font-family:'monospace;';text-align: left; color:yellow;">shipping only available within the EU </p>
+               <br>
+               <br>
+               <!-- <input type="radio" id="mailingList" name="optIb">
+               <label for="html">email me when new releases are available</label> -->
+              <!-- <input type="checkbox" id="mailingList" name="mailingList" value="true">
+              <label for="mailingList"> email me when new releases are available</label> -->
+            
+            <br>
+          <input id="submit" type="button" value="Submit">
+            
+            </form>
+        </div>
+   <div class="rightcolumn">
+     <img src="ect009.jpg" style="height:100%;width:100%;" alt="ect009">
+     </div>
+     <div class="footer">
+        <a href="../index.html">
+          <p style="text-align: right;"> ----> </p>
+        </a>
+     </div>
+   
+    </div>
+  </body>
+
+  <script>
+  document.getElementById("submit").onclick =  async (e) => {
+       
+      if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
+          document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "") {  
+
+                const body = {
+                  key : "ect009",
+                  firstName : document.getElementById("firstName").value,
+                  lastName : document.getElementById("lastName").value,
+                  email : document.getElementById("email").value,
+                  mailingAddress : document.getElementById("mailingAddress").value,
+                }
+
+                let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                });
+         
+                if (response.status === 400) {
+                    // console.log("I am sold out");
+                    window.location = "soldOut.html";
+                } else if (response.status === 200) {
+                    // console.log(response);
+                    window.location = "orderComplete.html";
+                } else {
+                  console.error('Network Error ):');
+                }
+            }
+        else {
+          alert("you forgot something");
+        }
+      }
+  
+  </script>
+  
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link rel="stylesheet" href="formstyle.css">
+    </head>
+  
+  
+
+  
+<body>  
+ <div class="grid"> 
+  <div class="header">
+   <p> letzterkussdesengels.site </p>
+   </div>
+  <div class="leftcolumn">
+    <p style="font-size:12px;font-family:'arial';font-style: bold;text-align:left; color:white;"> released by 53327</p>
+    <p style="font-size:24px;font-family:'arial;';text-align: left; color:white;">secrelifer34 - Fact of Nobody - CS</p>
+    <br>
+    <p style="font-size:14px;font-family:'arial;';text-align: left; color:white;"> 10EUR + Shipping </p>
+    <br>
+    
+
+           <form id="formElem" > 
+          
+            
+ 
+              <label for="firstName">First name:</label><br>
+              <input type="text" id="firstName" name="firstName"><br>
+              <label for="lastName">Last name:</label><br>
+              <input type="text" id="lastName" name="lastName"><br>
+              <label for="email">Email Address:</label><br>
+              <input type="text" id="email" name="email"><br>
+              <label for="mailingAddress">Mailing Address:</label><br>
+              <textarea rows = "5" id="mailingAddress" cols = "40" for="mailingAddress"></textarea>      
+              <br>
+              <p style="font-size:12px;font-family:'monospace;';text-align: left; color:white;"> *we'll figure out your shipping costs and email you the total along with instructions for how to pay </p>
+              <br>
+              <p style="font-size:16px;font-family:'arial', cursive;text-align: left; color:yellow;">shipping only available within the EU </p>
+               
+              
+               <!-- <input type="radio" id="mailingList" name="optIb">
+               <label for="html">email me when new releases are available</label> -->
+              <!-- <input type="checkbox" id="mailingList" name="mailingList" value="true">
+              <label for="mailingList"> email me when new releases are available</label> -->
+            
+            <br>
+          <input id="submit" type="button" value="Submit">
+            
+            </form>
+
+        </div>
+   <div class="rightcolumn">
+     <img src="secretcover2.jpg" style="height:100%;width:100%;" alt="factofnobody">
+     </div>
+     <div class="footer">
+       <!-- <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1059756664&color=%230c0d0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/antistateelectronics" title="Anti-State Electronics" target="_blank" style="color: #cccccc; text-decoration: none;">Anti-State Electronics</a> · <a href="https://soundcloud.com/antistateelectronics/spiderwrap-tweaker-229-dj-valentimes-dj-piral-ase-002-clips" title="Spiderwrap, Tweaker-229, DJ Valentimes, DJ §piral [ASE-002_12&quot;] - Clips" target="_blank" style="color: #cccccc; text-decoration: none;">Spiderwrap, Tweaker-229, DJ Valentimes, DJ §piral [ASE-002_12&quot;] - Clips</a></div> -->
+       
+        <a href="../index.html">
+          <p style="text-align: right;"> ----> </p>
+        </a>
+        <br>
+
+     </div>
+   
+    </div>
+  </body>
+
+  <script>
+  document.getElementById("submit").onclick =  async (e) => {
+       
+      if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
+          document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "") {  
+
+                const body = {
+                  key : "factofnobody",
+                  firstName : document.getElementById("firstName").value,
+                  lastName : document.getElementById("lastName").value,
+                  email : document.getElementById("email").value,
+                  mailingAddress : document.getElementById("mailingAddress").value,
+                }
+
+                let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                });
+         
+                if (response.status === 400) {
+                    // console.log("I am sold out");
+                    window.location = "soldOut.html";
+                } else if (response.status === 200) {
+                    // console.log(response);
+                    window.location = "orderComplete.html";
+                } else {
+                  console.error('Network Error ):');
+                }
+            }
+        else {
+          alert("you forgot something");
+        }
+      }
+  
+  </script>
+  
+</html>
