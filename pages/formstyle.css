@@ -7,193 +7,51 @@
  }
 
 .grid {
-  /*background-image: url('background.jpg');*/
-  background-repeat: no-repeat;
   display: grid;
-  background-position: center;
-  grid-template-columns: 1fr 100px 200px 200px 200px 1fr;
-  grid-template-rows: 150px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 150px;
+  grid-template-columns: 1fr 400px 500px 1fr;
+  grid-template-rows: 75px 500px 150px;
   grid-template-areas: 
-    ". head head head head ." 
-    ". ib1 tb1 tb1 tb1 ."
-    ". ib2 tb2 tb2 tb2 ."
-    ". ib3 tb3 tb3 tb3 ."
-    ". ib4 tb4 tb4 tb4 ."
-    ". ib5 tb5 tb5 tb5 ."
-    ". ib6 tb6 tb6 tb6 ."
-    ". ib7 tb7 tb7 tb7 ."
-    ". ib8 tb8 tb8 tb8 ."
-    ". ib9 tb9 tb9 tb9 ."
-    ". ib10 tb10 tb10 tb10 ."
-    ". foot foot foot foot .";
+    ". header header ." 
+    ". leftcolumn rightcolumn ."
+    ". footer footer .";
   }
 
+
+
 .header { 
-  grid-area: head;
   padding: 10px;
+  grid-area: header;
   text-align: center;
+}
+
+.leftcolumn {
+  padding: 10px;
+  grid-area: leftcolumn;
+/*  justify-content: center;
+*/  align-items: center;
+  overflow: hidden
  
 }
 
-.imagebox1 { 
-  grid-area: ib1;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
+.leftcolumn form {
+   min-width: 100%;
+   min-height: 100%;
+   object-fit: fill;
+    
+}
 
+
+.rightcolumn {
+  padding: 10px;
+  grid-area: rightcolumn;
+
+
+}
+
+.footer {
+  padding: 10px;
+  grid-area: footer;
+
+}
 
  
-}
-
-.imagebox2 { 
-  grid-area: ib2;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
-
- 
-}
-
-.imagebox3 { 
-  grid-area: ib3;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
- 
-}
-
-.imagebox4 { 
-  grid-area: ib4;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
- 
-}
-
-.imagebox5 { 
-  grid-area: ib5;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
- 
-}
-
-.imagebox6 { 
-  grid-area: ib6;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
- 
-}
-
-.imagebox7 { 
-  grid-area: ib7;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
- 
-}
-
-.imagebox8 { 
-  grid-area: ib8;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
- 
-}
-
-.imagebox9 { 
-  grid-area: ib9;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
- 
-}
-
-.imagebox10 { 
-  grid-area: ib10;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-  padding: 2px;
- 
-}
-
-.textbox1  { 
-  padding: 5px;
-  grid-area: tb1;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
- 
-}
-
-.textbox2  { 
-  padding: 5px;
-  grid-area: tb2;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.textbox3  { 
-    padding: 5px;
-  grid-area: tb3;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.textbox4  { 
-    padding: 5px;
-  grid-area: tb4;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.textbox5  { 
-    padding: 5px;
-  grid-area: tb5;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.textbox6  { 
-    padding: 5px;
-  grid-area: tb6;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.textbox7  { 
-    padding: 5px;
-  grid-area: tb7;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.textbox8  { 
-    padding: 5px;
-  grid-area: tb8;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.textbox9  { 
-    padding: 5px;
-  grid-area: tb9;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.textbox10  { 
-    padding: 5px;
-  grid-area: tb10;
-  border-style: groove;
-  background-color: rgb(81, 90, 108);
-}
-
-.footer  { 
-  grid-area: foot;
- 
-}
-
-
-
-
