@@ -7,8 +7,8 @@
  }
 
  .banner {
-  background-color:yellow;
-  color:black;
+  background-color:black;
+  color:darkred;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -51,6 +51,7 @@
 
 .box1:hover { 
   transform: scale(1.5);
+
 }
 
 
@@ -109,10 +110,37 @@
 
 }
 
+.imagebox:hover { 
+  background-color: yellow;
+}
+
+.imagebox:hover a { 
+  background-color: yellow;
+}
+
 .textbox  { 
   padding: 5px;
   grid-area: tb;
   border-style: groove;
 }
+
+.textbox a p{ 
+ color:  yellow;
+}
+
+.textbox:hover { 
+  background-color: yellow;
+  color: black;
+}
+
+.textbox:hover p { 
+  background-color: yellow;
+  color: black;
+}
+
+.textbox:hover a p { 
+  color: red;
+}
+
 
 
