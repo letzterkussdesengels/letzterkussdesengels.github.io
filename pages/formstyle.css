@@ -5,7 +5,7 @@
   color: white;
 
  }
- 
+
  .banner {
   background-color:black;
   color:darkred;
@@ -17,7 +17,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 400px 500px 1fr;
-  grid-template-rows: 75px 500px 150px;
+  grid-template-rows: 30px 500px 150px;
   grid-template-areas: 
     ". header header ." 
     ". leftcolumn rightcolumn ."
@@ -27,13 +27,13 @@
 
 
 .header { 
-  padding: 10px;
+  padding: 0px;
   grid-area: header;
   text-align: center;
 }
 
 .leftcolumn {
-  padding: 10px;
+  padding: 0px;
   grid-area: leftcolumn;
 /*  justify-content: center;
 */  align-items: center;
