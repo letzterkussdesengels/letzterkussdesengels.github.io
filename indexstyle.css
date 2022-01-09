@@ -50,7 +50,7 @@
 }
 
 .box1:hover { 
-  transform: scale(1.8);
+  transform: scale(1.6);
 
 }
 
@@ -60,7 +60,7 @@
 }
 
 .box2:hover { 
-  transform: scale(1.8);
+  transform: scale(1.6);
 }
 
 .box3 { 
@@ -68,7 +68,7 @@
 }
 
 .box3:hover { 
-  transform: scale(1.8);
+  transform: scale(1.6);
 }
 
 .box4 { 
@@ -76,7 +76,7 @@
 }
 
 .box4:hover { 
-  transform: scale(1.8);
+  transform: scale(1.6);
 }
 
 .box5 { 
@@ -84,7 +84,7 @@
 }
 
 .box5:hover { 
-  transform: scale(1.8);
+  transform: scale(1.6);
 }
 
 .footer  { 
