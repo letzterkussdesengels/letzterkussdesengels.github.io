@@ -110,11 +110,11 @@
 }
 
 .imagebox:hover { 
-  background-color: black;
+  background-color: darkred;
 }
 
 .imagebox:hover a { 
-  background-color: black;
+  background-color: darkred;
 }
 
 .textbox  { 
