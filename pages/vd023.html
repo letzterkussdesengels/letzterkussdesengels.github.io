@@ -110,6 +110,9 @@
 
   document.getElementById("submit").onclick =  async (e) => {
        
+    var dateObject = new Date();
+    var formattedDate = "Ordered On:"+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
+
       if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
           document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "" && document.getElementById("country").value != "") {  
 
@@ -123,7 +126,7 @@
                   email : document.getElementById("email").value,
                   mailingAddress : document.getElementById("mailingAddress").value,
                   country: document.getElementById("country").value,
-                  date : Date.now()
+                  date : formattedDate
                 }
 
                 let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
