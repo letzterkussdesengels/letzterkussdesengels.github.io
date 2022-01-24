@@ -112,7 +112,8 @@
   <script>
   document.getElementById("submit").onclick =  async (e) => {
 
-    var dateObject = new Date(date.now());
+    var timeStamp = date.now();
+    var dateObject = new Date(timeStamp);
     var formattedDate = stringify("Date: "+date.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds());
 
     if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
