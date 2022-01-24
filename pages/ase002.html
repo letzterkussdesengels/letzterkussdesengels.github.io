@@ -114,10 +114,10 @@
 
   
     var dateObject = new Date();
-    var formattedDate = "Ordered On:"+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
+    var formattedDate = "Ordered On: "+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
 
     if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
-          document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "") {  
+          document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "" && document.getElementById("country").value != "") {  
               const body = {
                   key : "ase002",
                   price: "15", 
