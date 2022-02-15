@@ -149,10 +149,10 @@
                 });
          
                 if (response.status === 400) {
-                    // console.log("I am sold out");
+                    console.log("I am sold out");
                     window.location = "soldOut.html";
                 } else if (response.status === 200) {
-                    // console.log(response);
+                    console.log(response);
                     window.location = "orderComplete.html";
                 } else {
                   console.error('Network Error ):');
