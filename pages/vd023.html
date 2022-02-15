@@ -85,12 +85,11 @@
               <br>
               <br>
               <p style="font-size:14px;font-family:'monospace;';text-align: left; color:yellow;"> *you'll get an email with instructions for how to pay* </p>
-              <br>
-         
-               
-            
+              <br>                  
             
             </form>
+
+
 
         </div>
    <div class="rightcolumn">
@@ -117,13 +116,19 @@
 
   <script>
 
+
   document.getElementById("submit").onclick =  async (e) => {
+
        
     var dateObject = new Date();
     var formattedDate = "Ordered On: "+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
 
       if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
           document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "" && document.getElementById("country").value != "") {  
+
+                theButton = document.getElementById("submit");
+                theButton.disabled = "disabled";
+                theButton.value = "Please Wait..."; 
 
                 const body = {
 
