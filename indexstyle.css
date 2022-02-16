@@ -113,7 +113,7 @@
 
 .imagebox {
   grid-area: ib;
-  border-style: groove;
+  border-style: outset;
   padding: 2px;
 
 }
@@ -129,7 +129,7 @@
 .textbox  { 
   padding: 5px;
   grid-area: tb;
-  border-style: groove;
+  border-style: outset;
 }
 
 .textbox a p{ 
