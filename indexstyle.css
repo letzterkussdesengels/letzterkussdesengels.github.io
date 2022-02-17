@@ -22,7 +22,7 @@
   display: grid;
   background-position: center;
   grid-template-columns: 1fr 700px 1fr;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 150px;
+  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 150px;
   grid-template-areas: 
     ". head ." 
     ". b1 ."
@@ -105,8 +105,8 @@
   background-repeat: no-repeat;
   display: grid;
   background-position: center;
-  grid-template-columns: 100px 200px 200px 200px;
-  grid-template-rows: 100px;
+  grid-template-columns: 120px 200px 200px 200px;
+  grid-template-rows: 120px;
   grid-template-areas: 
     "ib tb tb tb" 
 }
