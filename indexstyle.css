@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
   display: grid;
   background-position: center;
-  grid-template-columns: 1fr 700px 1fr;
+  grid-template-columns: .5fr 700px .5fr;
   grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 150px;
   grid-template-areas: 
     ". head ." 
@@ -151,5 +151,41 @@
   color: white;
 }
 
+
+@media only screen {
+
+.grid {
+  background-repeat: no-repeat;
+  display: grid;
+  background-position: center;
+  grid-template-columns:  0.8fr 700px 1fr;
+  grid-template-rows: 100px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 10px;
+  grid-template-areas: 
+    ". head ." 
+    ". b1 ."
+    ". b2 ."
+    ". b3 ."
+    ". b4 ."
+    ". b5 ."
+    ". b6 ."
+    ". b7 ."
+    ". b8  ."
+    ". b9  ."
+    ". b10  ."
+    ". foot .";
+
+  }
+    .subgrid {
+  /*background-image: url('background.jpg');*/
+  background-repeat: no-repeat;
+  display: grid;
+  background-position: center;
+  grid-template-columns: 180px 190px 190px 190px;
+  grid-template-rows: 180px;
+  grid-template-areas: 
+    "ib tb tb tb" 
+  }
+
+}
 
 
