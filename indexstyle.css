@@ -12,7 +12,7 @@
   color:darkred;
   text-align: center;
   overflow: hidden;
-  position: relative;
+  position: absolute;
  }
 
 
@@ -158,8 +158,8 @@
   background-repeat: no-repeat;
   display: grid;
   background-position: center;
-  grid-template-columns: 1px 300px 1px;
-  grid-template-rows: 50px 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px 10px;
+  grid-template-columns: 1px 700px 1px;
+  grid-template-rows: 100px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 10px;
   grid-template-areas: 
     ". head ." 
     ". b1 ."
@@ -180,8 +180,8 @@
   background-repeat: no-repeat;
   display: grid;
   background-position: center;
-  grid-template-columns: 90px 70px 70px 70px;
-  grid-template-rows: 90px;
+  grid-template-columns: 180px 190px 190px 190px;
+  grid-template-rows: 180px;
   grid-template-areas: 
     "ib tb tb tb" 
   }
