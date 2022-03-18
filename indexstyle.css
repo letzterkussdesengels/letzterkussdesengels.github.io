@@ -95,6 +95,38 @@
   transform: scale(1.4);
 }
 
+.box7 { 
+  grid-area: b7;
+}
+
+.box7:hover { 
+  transform: scale(1.4);
+}
+
+.box8 { 
+  grid-area: b8;
+}
+
+.box8:hover { 
+  transform: scale(1.4);
+}
+
+.box9 { 
+  grid-area: b9;
+}
+
+.box9:hover { 
+  transform: scale(1.4);
+}
+
+.box10 { 
+  grid-area: b10;
+}
+
+.box10:hover { 
+  transform: scale(1.4);
+}
+
 .footer  { 
   grid-area: foot;
  
