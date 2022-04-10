@@ -208,7 +208,16 @@
     ". foot .";
 
   }
-    .subgrid {
+
+.banner {
+  background-color:black;
+  color:darkred;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+ }
+ 
+.subgrid {
   /*background-image: url('background.jpg');*/
   background-repeat: no-repeat;
   display: grid;
