@@ -1,7 +1,7 @@
 *{
 
-  background-color: white;
-  color: paleturquoise;
+  background-color: black;
+  color:  rgb(81, 90, 108);
   margin: 0px;
   padding: 0px;
 
@@ -9,25 +9,25 @@
  }
 
 .first :hover { 
-  color: yellow;
-  background-color: blue;
+  color: black;
+  background-color: yellow;
  /* transform: scale(1.4);*/
 }
 
 .second :hover { 
-  color: yellow;
-  background-color: blue;
+  color: black;
+  background-color: yellow;
  /* transform: scale(1.4);*/
 }
 
 .third :hover { 
-  color: yellow;
-  background-color: blue;
+  color: black;
+  background-color: yellow;
  /* transform: scale(1.4);*/
 }
 
 a :hover { 
-  color: yellow;
-  background-color: blue;
+  color: black;
+  background-color: yellow;
  /* transform: scale(1.4);*/
 }

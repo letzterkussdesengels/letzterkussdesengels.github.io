@@ -94,9 +94,11 @@ opacity: 1;
 }
 
 .digitals:hover { 
-  color: yellow;
-  background-color: blue;
+  color: green;
+  background-color: black;
   transform: scale(1.4);
+
+
 }
 
  
