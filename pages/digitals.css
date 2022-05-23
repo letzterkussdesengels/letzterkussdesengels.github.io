@@ -1,0 +1,12 @@
+*{
+
+  background-color: white;
+  color: paleturquoise;
+
+ }
+
+a :hover { 
+  color: yellow;
+  background-color: blue;
+ /* transform: scale(1.4);*/
+}
