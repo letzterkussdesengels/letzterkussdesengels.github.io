@@ -1,16 +1,16 @@
  *{
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: rgb(81, 90, 108);
+  background-color: rgb(81, 90, 108);
+  color: black;
 
   
 
  }
 
  .banner {
-  background-color:darkred;
-  color:black;
+  background-color:black;
+  color:darkred;
   overflow: hidden;
   text-align: center;
   position: relative;
