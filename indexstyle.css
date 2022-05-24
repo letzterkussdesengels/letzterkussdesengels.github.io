@@ -1,19 +1,23 @@
  *{
   margin: 0;
   padding: 0;
-  background-color: rgb(81, 90, 108);
-  color: white;
+  background-color: black;
+  color: rgb(81, 90, 108);
 
   
 
  }
 
  .banner {
-  background-color:black;
-  color:darkred;
+  background-color:darkred;
+  color:black;
   overflow: hidden;
   text-align: center;
   position: relative;
+ }
+
+ a {
+  text-decoration: none;
  }
 
 
@@ -166,7 +170,7 @@
 }
 
 .textbox a p{ 
- color:  yellow;
+ color:  white;
 
 }
 
