@@ -35,3 +35,11 @@ a :hover {
 a {
   text-decoration: none;
 }
+
+.banner {
+  background-color:darkred;
+  color:black;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+ }
