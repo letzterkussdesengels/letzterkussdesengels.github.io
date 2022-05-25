@@ -27,7 +27,7 @@
   display: grid;
   background-position: center;
   grid-template-columns: .5fr 700px .5fr;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 150px;
+  grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 150px;
   grid-template-areas: 
     ". head ." 
     ". b1 ."
