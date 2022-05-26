@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   background-color: rgb(81, 90, 108);
-  color: black;
+  color: white;
 
   
 
@@ -151,7 +151,8 @@
 .imagebox {
   grid-area: ib;
   border-style: outset;
-  padding: 2px;
+  border-color: black;
+  padding: 1px;
 
 }
 
@@ -167,10 +168,11 @@
   padding: 5px;
   grid-area: tb;
   border-style: outset;
+  border-color: black;
 }
 
 .textbox a p{ 
- color:  white;
+ color:  navajowhite;
 
 }
 
@@ -195,8 +197,8 @@
   background-repeat: no-repeat;
   display: grid;
   background-position: center;
-  grid-template-columns: 1px 700px 1px;
-  grid-template-rows: 100px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 10px;
+  grid-template-columns: 1px 498px 1px;
+  grid-template-rows: 50px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 10px;
   grid-template-areas: 
     ". head ." 
     ". b1 ."
@@ -226,7 +228,7 @@
   background-repeat: no-repeat;
   display: grid;
   background-position: center;
-  grid-template-columns: 180px 190px 190px 190px;
+  grid-template-columns: 111px 123px 123px 123px;
   grid-template-rows: 180px;
   grid-template-areas: 
     "ib tb tb tb" 
