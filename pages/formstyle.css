@@ -94,11 +94,13 @@ opacity: 1;
 }
 
 .digitals:hover { 
-  color: green;
   background-color: black;
   transform: scale(1.4);
 
-
 }
 
+.digitals:hover a p { 
+  color: white;
+
+}
  
