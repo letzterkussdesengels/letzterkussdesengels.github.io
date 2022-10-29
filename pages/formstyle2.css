@@ -1,19 +1,16 @@
  *{
   margin: 0;
   padding: 0;
-/*  background-color: rgb(81, 90, 108);
-
-*/ 
-    background-color:whitesmoke;
-   color: black;
+  background-color: whitesmoke;
+  color: black;
 
  }
 
  .banner {
-  background-color:black;
-  color:darkred;
-  text-align: center;
+ background-color:black;
+  color:whitesmoke;
   overflow: hidden;
+  text-align: center;
   position: relative;
  }
 
@@ -70,7 +67,7 @@
   top: 10px;
   left: 10px;
   width: 96%;
-  height: 96%; 
+  height: 96%;
   background: rgba(0, 0, 0, 0.5);
   color: yellow;
   opacity: 0;
@@ -81,10 +78,10 @@
 
 }
 
-/*.overlay_text {
+.overlay_text {
   color: yellow;
   position: relative;
-}*/
+}
 
 .rightcolumn_overlay:hover {
 opacity: 1;
