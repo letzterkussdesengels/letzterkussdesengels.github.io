@@ -125,7 +125,7 @@ opacity: 1;
 
   display: grid;
   grid-template-columns: .25fr 500px 400px 1fr;
-  grid-template-rows: 18px 120px 600px 900px 150px;
+  grid-template-rows: 28px 120px 600px 900px 150px;
   grid-template-areas: 
     "banner banner banner banner"
     ". header header ." 
@@ -133,6 +133,24 @@ opacity: 1;
     ". leftcolumn leftcolumn ."
     ". footer footer .";
   }
+
+.banner  {
+  background-color:black;
+  grid-area: banner;
+  width: 100%;
+  color:darkred;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+ }
+.banner p {
+  background-color:black;
+  font-size: 10px;
+  width: 100%;
+  color:darkred;
+  overflow: hidden;
+
+} 
   .header { 
   padding: 0px;
   grid-area: header;
