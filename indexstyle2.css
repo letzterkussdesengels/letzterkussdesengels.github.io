@@ -829,6 +829,10 @@ opacity: 1;
   background-color: white;
   margin-left: 40px;
 }
+.box1 p {
+  align-self:center;
+  font-size: 40px;
+}
 .box2 {
   background-color: white;
   margin-left: 40px;
@@ -884,8 +888,17 @@ opacity: 1;
   font-size: 20px;
 
 }
+
+.overlay_box1 p {
+  font-size: 20px;
+
+}
 .overlay_box2 {
   opacity: 1;
+}
+.overlay_box2 p {
+  font-size: 20px;
+
 }
 
 .overlay_box2 a p {
