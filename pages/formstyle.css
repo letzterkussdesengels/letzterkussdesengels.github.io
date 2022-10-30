@@ -9,23 +9,34 @@
 
  }
 
- .banner {
+
+.grid {
+  display: grid;
+  grid-template-columns: .25fr 400px 500px 1fr;
+  grid-template-rows: 18px 30px 500px 150px;
+  grid-template-areas: 
+    "banner banner banner banner"
+    ". header header ." 
+    ". rightcolumn leftcolumn ."
+    ". footer footer .";
+  }
+
+.banner  {
   background-color:black;
+  grid-area: banner;
+  width: 100%;
   color:darkred;
   text-align: center;
   overflow: hidden;
   position: relative;
  }
+.banner p {
+  background-color:black;
+  width: 100%;
+  color:darkred;
+  overflow: hidden;
 
-.grid {
-  display: grid;
-  grid-template-columns: .25fr 400px 500px 1fr;
-  grid-template-rows: 30px 500px 150px;
-  grid-template-areas: 
-    ". header header ." 
-    ". rightcolumn leftcolumn ."
-    ". footer footer .";
-  }
+} 
 
 
 
@@ -106,4 +117,34 @@ opacity: 1;
   color: white;
 
 }
+
+@media only screen and (max-width: 1000px) {
+
+
+.grid { 
+
+  display: grid;
+  grid-template-columns: .25fr 500px 400px 1fr;
+  grid-template-rows: 18px 120px 600px 900px 150px;
+  grid-template-areas: 
+    "banner banner banner banner"
+    ". header header ." 
+    ". rightcolumn rightcolumn ."
+    ". leftcolumn leftcolumn ."
+    ". footer footer .";
+  }
+  .header { 
+  padding: 0px;
+  grid-area: header;
+  text-align: center;
+}
+
+.leftcolumn{
+  font-size: 30px;
+
+}
+
+
+
+  }
  
