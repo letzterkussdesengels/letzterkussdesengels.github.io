@@ -14,6 +14,8 @@
   position: relative;
  }
 
+ 
+
 .grid {
   display: grid;
   grid-template-columns: .5fr 400px 500px 1fr;
@@ -29,7 +31,13 @@
 .header { 
   padding: 0px;
   grid-area: header;
-  text-align: center;
+ 
+}
+
+.header p { 
+  
+  text-align: left;
+  font-size: 28px;
 }
 
 .leftcolumn {
@@ -39,6 +47,12 @@
 */  align-items: center;
   overflow: hidden
  
+}
+
+.leftcolumn p {
+  text-align: left;
+  font-size: 20px;
+
 }
 
 .leftcolumn form {
@@ -53,6 +67,7 @@
   padding: 10px;
   grid-area: rightcolumn;
   position: relative;
+  text-align: center;
 
 
 }
@@ -91,6 +106,10 @@ opacity: 1;
   padding: 10px;
   grid-area: footer;
 
+}
+
+.footer p {
+  font-size: 20px;
 }
 
 .digitals:hover { 
@@ -141,12 +160,42 @@ opacity: 1;
   .header { 
   padding: 0px;
   grid-area: header;
-  text-align: center;
+
 }
 
-.leftcolumn{
+.header p {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.leftcolumn p{
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.leftcolumn form {
   font-size: 30px;
 
+}
+
+.leftcolumn input {
+
+    width: 200px;  
+    height: 80px;
+    font-size: 50px;
+
+}
+
+.rightcolumn {
+  text-align: center;
+
+}
+
+.footer p {
+  font-size: 40px;
 }
 
 
