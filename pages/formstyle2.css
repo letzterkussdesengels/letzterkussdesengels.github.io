@@ -155,7 +155,7 @@ opacity: 1;
 
   display: grid;
   grid-template-columns: .25fr 500px 400px 1fr;
-  grid-template-rows: 50px 120px 600px 900px 150px;
+  grid-template-rows: 50px 180px 600px 900px 150px;
   grid-template-areas: 
     "banner banner banner banner"
     ". header header ." 
@@ -175,7 +175,7 @@ opacity: 1;
  }
 .banner p {
   background-color:black;
-  font-size: 20px;
+  font-size: 50px;
   width: 100%;
   color:whitesmoke;
   overflow: hidden;
