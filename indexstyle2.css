@@ -1100,6 +1100,11 @@ opacity: 1;
     " b8  "
     " b9  "
     " b10  "
+    "b11"
+    "b12"
+    "b13"
+    "b14"
+    "b15"
     " foot ";
 
   }
@@ -1175,6 +1180,36 @@ opacity: 1;
 
 }
 
+.box11 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
+.box12 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
+.box13 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
+.box14 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
+.box15 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
 
 .overlay_box1 {
   opacity: 1;
@@ -1206,6 +1241,10 @@ opacity: 1;
   opacity: 1;
 }
 
+.overlay_box3 p {
+  font-size: 20px;
+
+}
 .overlay_box3 a p {
   font-size: 20px;
 
@@ -1215,12 +1254,20 @@ opacity: 1;
   opacity: 1;
 }
 
+.overlay_box4 p {
+  font-size: 20px;
+
+}
 .overlay_box4 a p {
   font-size: 20px;
 
 }
 .overlay_box5 {
   opacity: 1;
+}
+.overlay_box5 p {
+  font-size: 20px;
+
 }
 .overlay_box5 a p {
   font-size: 20px;
@@ -1229,6 +1276,10 @@ opacity: 1;
 
 .overlay_box6 {
   opacity: 1;
+}
+.overlay_box6 p {
+  font-size: 20px;
+
 }
 .overlay_box6 a p {
   font-size: 20px;
@@ -1239,6 +1290,10 @@ opacity: 1;
 .overlay_box7 {
   opacity: 1;
 }
+.overlay_box7 p {
+  font-size: 20px;
+
+}
 .overlay_box7 a p {
   font-size: 20px;
 
@@ -1247,6 +1302,10 @@ opacity: 1;
 .overlay_box8 {
   opacity: 1;
 }  
+.overlay_box8 p {
+  font-size: 20px;
+
+}
 .overlay_box8 a p {
   font-size: 20px;
 
@@ -1254,6 +1313,10 @@ opacity: 1;
 
 .overlay_box9 {
   opacity: 1;
+}
+.overlay_box9 p {
+  font-size: 20px;
+
 }
 .overlay_box9 a p {
   font-size: 20px;
@@ -1263,8 +1326,69 @@ opacity: 1;
 .overlay_box10 {
   opacity: 1;
 }
+.overlay_box10 p {
+  font-size: 20px;
+
+}
 .overlay_box10 a p {
   font-size: 20px;
+
+}
+.overlay_box11 {
+  opacity: 1;
+}
+.overlay_box11 p {
+  font-size: 20px;
+
+}
+.overlay_box11 a p {
+  font-size: 20px;
+
+}
+.overlay_box12 {
+  opacity: 1;
+}
+.overlay_box12 p {
+  font-size: 20px;
+
+}
+.overlay_box12 a p {
+  font-size: 20px;
+
+}
+.overlay_box13 {
+  opacity: 1;
+}
+.overlay_box13 p {
+  font-size: 20px;
+
+}
+.overlay_box13 a p {
+  font-size: 20px;
+
+}
+.overlay_box14 {
+  opacity: 1;
+}
+.overlay_box14 p {
+  font-size: 20px;
+
+}
+.overlay_box14 a p {
+  font-size: 20px;
+
+}
+.overlay_box15 {
+  opacity: 1;
+}
+.overlay_box15 p {
+  font-size: 20px;
+
+}
+.overlay_box15 a p {
+  font-size: 20px;
+
+}
 
 }
 
