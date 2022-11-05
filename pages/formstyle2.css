@@ -18,14 +18,30 @@
 
 .grid {
   display: grid;
-  grid-template-columns: .5fr 400px 500px 1fr;
-  grid-template-rows: 30px 500px 150px;
+  grid-template-columns: .25fr 400px 500px 1fr;
+  grid-template-rows: 18px 30px 500px 150px;
   grid-template-areas: 
+    "banner banner banner banner"
     ". header header ." 
     ". rightcolumn leftcolumn ."
     ". footer footer .";
   }
+.banner  {
+  background-color:black;
+  grid-area: banner;
+  width: 100%;
+  color:whitesmoke;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+ }
+.banner p {
+  background-color:black;
+  width: 100%;
+  color:whitesmoke;
+  overflow: hidden;
 
+} 
 
 
 .header { 
@@ -60,6 +76,14 @@
    min-height: 100%;
    object-fit: fill;
     
+}
+
+.leftcolumn input {
+
+    width: 250px;  
+    height: 80px;
+    font-size: 50px;
+
 }
 
 
@@ -131,7 +155,7 @@ opacity: 1;
 
   display: grid;
   grid-template-columns: .25fr 500px 400px 1fr;
-  grid-template-rows: 28px 120px 600px 900px 150px;
+  grid-template-rows: 50px 120px 600px 900px 150px;
   grid-template-areas: 
     "banner banner banner banner"
     ". header header ." 
@@ -151,9 +175,9 @@ opacity: 1;
  }
 .banner p {
   background-color:black;
-  font-size: 10px;
+  font-size: 20px;
   width: 100%;
-  color:darkred;
+  color:whitesmoke;
   overflow: hidden;
 
 } 
@@ -195,7 +219,7 @@ opacity: 1;
 }
 
 .footer p {
-  font-size: 40px;
+  font-size: 100px;
 }
 
 
