@@ -242,7 +242,7 @@ opacity: 1;
 
 .box2:hover { 
   transform: scale(1.2);
-  filter:  invert(100%);
+  
 
 }
 
@@ -296,6 +296,7 @@ opacity: 1;
 
 .box3:hover { 
     transform: scale(1.2);
+    filter:  invert(100%);
    
 
   }
@@ -855,7 +856,7 @@ opacity: 1;
 
 .box12:hover { 
   transform: scale(1.2);
-  filter:  invert(100%);
+ 
 
 }
 
