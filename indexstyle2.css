@@ -296,7 +296,7 @@ opacity: 1;
 
 .box3:hover { 
     transform: scale(1.2);
-    filter:  invert(100%);
+   
 
   }
 .overlay_box3 a p{
@@ -316,7 +316,6 @@ opacity: 1;
 }
 .box4:hover { 
   transform: scale(1.2);
-filter:  invert(100%);
 }
 
 .box4 > * {
@@ -376,7 +375,6 @@ opacity: 1;
 
 .box5:hover { 
   transform: scale(1.2);
-  filter:  invert(100%);
 
 }
 
@@ -437,7 +435,7 @@ opacity: 1;
 
 .box6:hover { 
   transform: scale(1.2);
-  filter:  invert(100%);
+
 
 }
 
@@ -559,7 +557,7 @@ opacity: 1;
 
 .box8:hover { 
   transform: scale(1.2);
-  filter:  invert(100%);
+  
 
 }
 
@@ -620,7 +618,7 @@ opacity: 1;
 
 .box9:hover { 
   transform: scale(1.2);
-  filter:  invert(100%);
+ 
 
 }
 
