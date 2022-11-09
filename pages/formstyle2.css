@@ -86,6 +86,32 @@
 
 }
 
+#selector {
+
+    width: 20px;  
+    height: 20px;
+    font-size: 20px;
+
+}
+
+#selector input:checked + label:before {
+  background: white;
+  color: black;
+}
+
+#selector input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
 
 .rightcolumn {
   padding: 10px;
