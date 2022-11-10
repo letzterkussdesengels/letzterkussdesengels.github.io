@@ -139,7 +139,22 @@
 
     var dateObject = new Date();
     var formattedDate = "Ordered On: "+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
-       
+    let orderDetails = "";
+
+  
+    if (document.getElementById('vinyl').checked) {
+      orderDetails += "vinyl checked";
+      }
+
+    else if (document.getElementById('tape').checked){
+      orderDetails += "tape checked";
+      }
+   
+
+    
+
+
+     
       if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
           document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "" && document.getElementById("country").value != "") {  
 
@@ -152,8 +167,7 @@
                   email : document.getElementById("email").value,
                   mailingAddress : document.getElementById("mailingAddress").value,
                   country: document.getElementById("country").value,
-                  vinyl : document.getElementById("vinyl").value,
-                  tape: document.getElementById("tape").value,
+                  orderDetails : orderDetails,
                   date : formattedDate
                 }
 
