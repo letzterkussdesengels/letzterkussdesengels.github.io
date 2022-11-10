@@ -139,35 +139,43 @@
 
     var dateObject = new Date();
     var formattedDate = "Ordered On: "+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
-    let orderDetails = "";
-
-  
-    if (document.getElementById('vinylSelector').checked) {
-      orderDetails += "vinyl checked";
-      }
-
-    if (document.getElementById('tapeSelector').checked){
-      orderDetails += "tape checked";
-      }
-
-
-    console.log(orderDetails);
 
 
      
       if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
-          document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "" && document.getElementById("country").value != "") {  
+          document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "" && document.getElementById("country").value != "") { 
+
+          if (document.getElementById('vinylSelector').checked) { 
 
                 const body = {
-                  key : "lkde1",
-                  price: "0", 
+                  key : "lkde1-vinyl",
+                  price: "20", 
                   releaseType: "vinyl",
                   firstName : document.getElementById("firstName").value,
                   lastName : document.getElementById("lastName").value,
                   email : document.getElementById("email").value,
                   mailingAddress : document.getElementById("mailingAddress").value,
                   country: document.getElementById("country").value,
-                  orderDetails : orderDetails,
+                  date : formattedDate
+                }
+
+                let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+                    method: 'POST',
+                    body: JSON.stringify(body), 
+                });
+          
+            }
+
+        if (document.getElementById('tapeSelector').checked){
+           const body = {
+                  key : "lkde1-tape",
+                  price: "10", 
+                  releaseType: "tape",
+                  firstName : document.getElementById("firstName").value,
+                  lastName : document.getElementById("lastName").value,
+                  email : document.getElementById("email").value,
+                  mailingAddress : document.getElementById("mailingAddress").value,
+                  country: document.getElementById("country").value,
                   date : formattedDate
                 }
 
@@ -176,16 +184,20 @@
                     body: JSON.stringify(body), 
                 });
          
-                if (response.status === 400) {
-                    // console.log("I am sold out");
-                    window.location = "soldOut.html";
-                } else if (response.status === 200) {
-                    // console.log(response);
-                    window.location = "orderComplete.html";
-                } else {
-                  console.error('Network Error ):');
-                }
-            }
+                // if (response.status === 400) {
+                //     // console.log("I am sold out");
+                //     window.location = "soldOut.html";
+                // } else if (response.status === 200) {
+                //     // console.log(response);
+                //     window.location = "orderComplete.html";
+                // } else {
+                //   console.error('Network Error ):');
+                // }
+        
+        }
+        window.location = "orderComplete.html";
+        }    
+
         else {
           alert("you forgot something");
         }
