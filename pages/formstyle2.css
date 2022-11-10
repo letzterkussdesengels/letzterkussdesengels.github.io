@@ -209,7 +209,7 @@ opacity: 1;
  }
 .banner p {
   background-color:black;
-  font-size: 100%;
+  font-size: 50px;
   width: 100%;
   color:whitesmoke;
   overflow: hidden;
@@ -218,7 +218,7 @@ opacity: 1;
 
 .banner {
 
-  font-size: 100%;
+  font-size: 50px;
 }
   .header { 
   padding: 0px;
