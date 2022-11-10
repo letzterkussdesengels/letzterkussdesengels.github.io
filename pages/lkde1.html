@@ -139,7 +139,13 @@
 
     var dateObject = new Date();
     var formattedDate = "Ordered On: "+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
+    var somethingChecked = false; 
 
+    if (document.getElementById("vinylSelector").checked || document.getElementById("tapeSelector").checked) {
+      somethingChecked = true;
+    } else {
+      somethingChecked = false;
+    }
 
      
       if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
