@@ -29,13 +29,13 @@
            <form id="formElem" > 
             
           
-                <input id="selector" type="checkbox" id="vinyl" name="vinyl" >
-                <label id="selector" for="vinyl">10" Vinyl (Lathe) - 20EUR + Shipping</label>
+                <input id="vinylSelector" type="checkbox" name="vinyl" >
+                <label id="vinylSelector" for="vinyl">10" Vinyl (Lathe) - 20EUR + Shipping</label>
                 <br>
             
 
-                <input id="selector" type="checkbox" id="tape" name="tape" >
-                <label id="selector" for="tape">CS(2 bonus tracks) - 10EUR + Shipping</label>
+                <input id="tapeSelector" type="checkbox" name="tape" >
+                <label id="tapeSelector" for="tape">CS(2 bonus tracks) - 10EUR + Shipping</label>
                 <br>
                 <br>
           
@@ -142,14 +142,14 @@
     let orderDetails = "";
 
   
-    if (document.getElementById('vinyl').checked) {
+    if (document.getElementById('vinylSelector').checked) {
       orderDetails += "vinyl checked";
       }
 
-    else if (document.getElementById('tape').checked){
+    else if (document.getElementById('tapeSelector').checked){
       orderDetails += "tape checked";
       }
-   
+
 
     
 
