@@ -16,7 +16,7 @@
   
   </p>
   <div class="header">
-     <p > Kirbi Zauvijek - Cell(LKDE-1) - Vinyl 10" / CS  </p> 
+     <p > Kirbi Zauvijek - Cell(LKDE-1) - Vinyl 10" / CS (extended)  </p> 
    </div>
   <div class="leftcolumn">
 <br>
@@ -30,12 +30,12 @@
             
           
                 <input id="vinylSelector" type="checkbox" name="vinyl" >
-                <label id="vinylSelector" for="vinyl">10" Vinyl (Lathe) - 20EUR + Shipping</label>
+                <label id="vinylSelector" for="vinyl">10" Vinyl (Lathe Cut) - 20EUR + Shipping</label>
                 <br>
             
 
                 <input id="tapeSelector" type="checkbox" name="tape" >
-                <label id="tapeSelector" for="tape">CS(2 bonus tracks) - 10EUR + Shipping</label>
+                <label id="tapeSelector" for="tape">CS (extended) - 10EUR + Shipping</label>
                 <br>
                 <br>
           
@@ -111,17 +111,15 @@
    <div class="rightcolumn">
      <img src="lkde1.jpeg" style="height:100%;width:100%;" alt="lkde1">
      <div class="rightcolumn_overlay">
-      <a href="https://www.discogs.com/label/1580925-PUPPY-TAPES">
-          <p style="color:whitesmoke;background-color: black;text-align: ;"> https://www.discogs.com/label/1580925-PUPPY-TAPES</p>
-        </a>    
+      <img src="lkde_tapescan.jpg" style="height:100%" alt="lkde1">
         </div>
       </div>
      <div class="footer">
       <br>
     
+      <iframe width="1000" height="150" src="https://www.youtube.com/embed/w6RJV3eegCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      <iframe width="1000" height="150" src="https://www.youtube.com/embed/F4Y3Pkn95GI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+     
       <br>
       <br>
         <a href="../index.html">
@@ -190,15 +188,15 @@
                     body: JSON.stringify(body), 
                 });
          
-                // if (response.status === 400) {
-                //     // console.log("I am sold out");
-                //     window.location = "soldOut.html";
-                // } else if (response.status === 200) {
-                //     // console.log(response);
-                //     window.location = "orderComplete.html";
-                // } else {
-                //   console.error('Network Error ):');
-                // }
+                if (response.status === 400) {
+                    // console.log("I am sold out");
+                    window.location = "soldOut.html";
+                } else if (response.status === 200) {
+                    // console.log(response);
+                    window.location = "orderComplete.html";
+                } else {
+                  console.error('Network Error ):');
+                }
         
         }
         window.location = "orderComplete.html";
