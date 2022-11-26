@@ -138,6 +138,7 @@
 
 .box1 p {
   align-self:center;
+  color: black;
   font-size: 40px;
 }
 
@@ -151,13 +152,26 @@
   height: 100%;
 }
 
+.box1 img #tape_overlay{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 .overlay_box1 {
   position: relative;
+  background-image: url("lkde_tapescan.jpg");
+  background-position: center;
+   background-size: cover;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+/*  background: rgba(0, 0, 0, 0.5);*/
   color: yellow;
   opacity: 0;
   display: flex;
@@ -179,9 +193,15 @@
 opacity: 1;
 }
 
+
+
 .box1:hover { 
   transform: scale(1.2);
-  filter:  invert(100%);
+  filter: invert(100%);
+
+}
+.box1:hover #tape_overlay { 
+  display: block;
 
 }
 
@@ -242,6 +262,7 @@ opacity: 1;
 
 .box2:hover { 
   transform: scale(1.2);
+
   
 
 }
