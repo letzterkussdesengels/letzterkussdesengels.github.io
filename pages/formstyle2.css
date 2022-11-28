@@ -188,8 +188,8 @@ opacity: 1;
 .grid { 
 
   display: grid;
-  grid-template-columns: .25fr 500px 400px 1fr;
-  grid-template-rows: 50px 180px 600px 900px 150px;
+  grid-template-columns: .25fr 500px 400px .25fr;
+  grid-template-rows: 50px 180px 600px 1100px 150px;
   grid-template-areas: 
     "banner banner banner banner"
     ". header header ." 
@@ -198,15 +198,18 @@ opacity: 1;
     ". footer footer .";
   }
 
-.banner  {
-  background-color:black;
+.banner { 
   grid-area: banner;
-  width: 100%;
+  padding: 0px;
+  background-color:black;
   color:whitesmoke;
-  text-align: center;
   overflow: hidden;
-  position: relative;
- }
+  position: absolute;
+  width: 100%;
+  font-size: 100%;
+/*  margin-right: auto;
+*/
+}
 .banner p {
   background-color:black;
   font-size: 50px;
@@ -220,8 +223,9 @@ opacity: 1;
 
   font-size: 50px;
 }
-  .header { 
-  padding: 0px;
+
+.header { 
+  padding: 20px;
   grid-area: header;
 
 }
@@ -239,16 +243,27 @@ opacity: 1;
 
 }
 
-.leftcolumn form {
-  font-size: 30px;
+.leftcolumn  * { 
+  font-size: 35px;
+  text-align: center;
+}
 
+.leftcolumn  #vinylSelector { 
+  font-size: 45px;
+  text-align: center;
+}
+
+
+.leftcolumn  #tapeSelector { 
+  font-size: 45px;
+  text-align: center;
 }
 
 .leftcolumn input {
 
     width: 250px;  
-    height: 80px;
-    font-size: 50px;
+    height: 100px;
+    font-size: 70px;
 
 }
 
@@ -259,8 +274,13 @@ opacity: 1;
 
 .footer p {
   font-size: 100px;
+  text-align: center;
 }
 
+.footer iframe {
+  max-width: 100%;
+
+  }
 
 
   }
