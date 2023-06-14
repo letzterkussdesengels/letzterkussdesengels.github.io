@@ -1606,6 +1606,7 @@ opacity: 1;
 .box1 {
   background-color: white;
   margin-left: 40px;
+
 }
 
 .box1 p {
@@ -1736,7 +1737,8 @@ opacity: 1;
 
 .overlay_box1 {
   opacity: 1;
-  position: relative;
+  position: flex;
+  justify-content: center;
 
 
 }
