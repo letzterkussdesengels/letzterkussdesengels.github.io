@@ -1571,16 +1571,16 @@ opacity: 1;
     " b8  "
     " b9  "
     " b10  "
-    "b11"
-    "b12"
-    "b13"
-    "b14"
-    "b15"
-    "b16"
-    "b17"
-    "b18"
-    "b19"
-    "b20"
+    " b11  "
+    " b12  "
+    " b13 "
+    " b14"
+    " b15"
+    " b16"
+    " b17"
+    " b18"
+    " b19"
+    " b20"
     " foot ";
 
   }
@@ -1598,28 +1598,40 @@ opacity: 1;
 */
 }
 
-.grid img p{
+/*.grid img p{
     display: none;
     background-color: whitesmoke;
 }
-
+*/
 .box1 {
   background-color: white;
   margin-left: 40px;
 }
+
 .box1 p {
+  color: black;
+}
+/*.box1 p {
   align-self:center;
   font-size: 40px;
-}
+  color: black;
+}*/
 .box2 {
   background-color: white;
   margin-left: 40px;
  
 }
+.box2 p {
+  color: black;
+}
 .box3 {
   background-color: white;
   margin-left: 40px;
 
+}
+
+.box3 p {
+  color: black;
 }
 .box4 {
   background-color: white;
@@ -1687,9 +1699,45 @@ opacity: 1;
 
 }
 
+.box16 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
+.box16 p {
+  color: black;
+}
+
+.box17 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
+.box18 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
+.box19 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
+.box20 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+
 
 .overlay_box1 {
   opacity: 1;
+  position: relative;
+
 
 }
 .overlay_box1 a p {
@@ -1863,6 +1911,66 @@ opacity: 1;
 
 }
 .overlay_box15 a p {
+  font-size: 20px;
+
+}
+
+.overlay_box16 {
+  opacity: 1;
+}
+.overlay_box16 p {
+  font-size: 20px;
+
+}
+.overlay_box16 a p {
+  font-size: 20px;
+
+}
+
+.overlay_box17 {
+  opacity: 1;
+}
+.overlay_box17 p {
+  font-size: 20px;
+
+}
+.overlay_box17 a p {
+  font-size: 20px;
+
+}
+
+.overlay_box18 {
+  opacity: 1;
+}
+.overlay_box18 p {
+  font-size: 20px;
+
+}
+.overlay_box18 a p {
+  font-size: 20px;
+
+}
+
+.overlay_box19 {
+  opacity: 1;
+}
+.overlay_box19 p {
+  font-size: 20px;
+
+}
+.overlay_box19 a p {
+  font-size: 20px;
+
+}
+
+.overlay_box20 {
+  opacity: 1;
+}
+.overlay_box20 p {
+  font-size: 20px;
+
+}
+.overlay_box20 a p {
   font-size: 20px;
 
 }
