@@ -102,6 +102,30 @@
 
 }
 
+#smallSelector {
+
+    width: 20px;  
+    height: 20px;
+    font-size: 20px;
+
+}
+
+#medSelector {
+
+    width: 20px;  
+    height: 20px;
+    font-size: 20px;
+
+}
+
+#largeSelector {
+
+    width: 20px;  
+    height: 20px;
+    font-size: 20px;
+
+}
+
 #selector input:checked + label:before {
   background: white;
   color: black;
