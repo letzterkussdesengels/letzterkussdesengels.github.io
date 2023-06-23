@@ -1620,11 +1620,11 @@ opacity: 1;
 .box1 p {
   color: black;
 }
-/*.box1 p {
+.box1 p {
   align-self:center;
   font-size: 40px;
   color: black;
-}*/
+}
 .box2 {
   background-color: white;
   margin-left: 40px;
@@ -1721,13 +1721,20 @@ opacity: 1;
 .box17 {
   background-color: white;
     margin-left: 40px;
+    color: black;
 
 }
 
+.box17 p {
+  color: black;
+}
 .box18 {
   background-color: white;
     margin-left: 40px;
 
+}
+.box18 p {
+  color: black;
 }
 
 .box19 {
@@ -1735,11 +1742,17 @@ opacity: 1;
     margin-left: 40px;
 
 }
+.box19 p {
+  color: black;
+}
 
 .box20 {
   background-color: white;
     margin-left: 40px;
 
+}
+.box20 p {
+  color: black;
 }
 
 
@@ -1939,13 +1952,16 @@ opacity: 1;
 
 .overlay_box17 {
   opacity: 1;
+  color: black;
 }
 .overlay_box17 p {
   font-size: 20px;
+  color: black;
 
 }
 .overlay_box17 a p {
   font-size: 20px;
+  color: black;
 
 }
 
