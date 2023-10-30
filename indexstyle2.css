@@ -107,6 +107,7 @@
     "b6 b7 b8 b9 b10"
     "b11 b12 b13 b14 b15" 
     "b16 b17 b18 b19 b20"
+    "b21 b22 b23 b24 b25"
   }
 
 
@@ -136,7 +137,7 @@
 }
 
 .box1 p {
-  align-self:center;
+  align-self: center;
   color: white;
   font-size: 40px;
 }
@@ -617,14 +618,11 @@ opacity: 1;
 
 .overlay_box8 {
   position: relative;
-  background-image: url("lkde_tapescan.jpg");
-  background-position: center;
-   background-size: cover;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-/*  background: rgba(0, 0, 0, 0.5);*/
+  background: rgba(0, 0, 0, 0.5);
   color: yellow;
   opacity: 0;
   display: flex;
@@ -740,13 +738,16 @@ opacity: 1;
   height: 100%;
 }
 
-.overlay_box10 {  
+.overlay_box10 {
   position: relative;
+  background-image: url("lkde_tapescan.jpg");
+  background-position: center;
+   background-size: cover;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+/*  background: rgba(0, 0, 0, 0.5);*/
   color: yellow;
   opacity: 0;
   display: flex;
@@ -1487,6 +1488,406 @@ opacity: 1;
 
 
 }
+
+.box21 { 
+  grid-area: b21;
+  display: grid;
+  background-color: black;
+
+}
+
+.box21 > * { 
+  grid-area: 1 / 1;
+/*  width: 100%;
+  height: 100%;*/
+}
+
+.box21 p {
+  align-self:center;
+  color: white;
+  font-size: 40px;
+}
+
+
+
+.box21 img{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.box21 img #tape_overlay{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.overlay_box21 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+}
+
+.overlay_box21 a p{
+
+  max-height: 100%;
+  max-width: 100%;
+    padding: 2px;
+
+}
+
+.overlay_box21:hover {
+opacity: 1;
+}
+
+
+
+.box21:hover { 
+  transform: scale(1.2);
+  filter: invert(100%);
+
+}
+.box21:hover #tape_overlay { 
+  display: block;
+
+
+}
+
+.box22 { 
+  grid-area: b22;
+  display: grid;
+  background-color: black;
+
+}
+
+.box22 > * { 
+  grid-area: 1 / 1;
+/*  width: 100%;
+  height: 100%;*/
+}
+
+.box22 p {
+  align-self:center;
+  color: white;
+  font-size: 40px;
+}
+
+
+
+.box22 img{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.box22 img #tape_overlay{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.overlay_box22 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+}
+
+.overlay_box22 a p{
+
+  max-height: 100%;
+  max-width: 100%;
+    padding: 2px;
+
+}
+
+.overlay_box22:hover {
+opacity: 1;
+}
+
+
+
+.box22:hover { 
+  transform: scale(1.2);
+  filter: invert(100%);
+
+}
+.box22:hover #tape_overlay { 
+  display: block;
+
+
+}
+
+.box23 { 
+  grid-area: b23;
+  display: grid;
+  background-color: black;
+
+}
+
+.box23 > * { 
+  grid-area: 1 / 1;
+/*  width: 100%;
+  height: 100%;*/
+}
+
+.box23 p {
+  align-self:center;
+  color: white;
+  font-size: 40px;
+}
+
+
+
+.box23 img{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.box23 img #tape_overlay{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.overlay_box23 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+}
+
+.overlay_box23 a p{
+
+  max-height: 100%;
+  max-width: 100%;
+    padding: 2px;
+
+}
+
+.overlay_box23:hover {
+opacity: 1;
+}
+
+
+
+/*.box23:hover { 
+  transform: scale(1.2);
+  filter: invert(100%);
+
+}
+.box23:hover #tape_overlay { 
+  display: block;
+
+
+}*/
+
+.box24 { 
+  grid-area: b24;
+  display: grid;
+  background-color: black;
+
+}
+
+.box24 > * { 
+  grid-area: 1 / 1;
+/*  width: 100%;
+  height: 100%;*/
+}
+
+.box24 p {
+  align-self:center;
+  color: white;
+  font-size: 40px;
+}
+
+
+
+.box24 img{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.box24 img #tape_overlay{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.overlay_box24{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+}
+
+.overlay_box24 a p{
+
+  max-height: 100%;
+  max-width: 100%;
+    padding: 2px;
+
+}
+
+.overlay_box24:hover {
+opacity: 1;
+}
+
+
+
+/*.box24:hover { 
+  transform: scale(1.2);
+  filter: invert(100%);
+
+}
+.box24:hover #tape_overlay { 
+  display: block;
+*/
+
+}
+
+.box25 { 
+  grid-area: b25;
+  display: grid;
+  background-color: black;
+
+}
+
+.box25 > * { 
+  grid-area: 1 / 1;
+/*  width: 100%;
+  height: 100%;*/
+}
+
+.box25 p {
+  align-self:center;
+  color: white;
+  font-size: 40px;
+}
+
+
+
+.box25 img{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.box25 img #tape_overlay{ 
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.overlay_box25 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+}
+
+.overlay_box25 a p{
+
+  max-height: 100%;
+  max-width: 100%;
+    padding: 2px;
+
+}
+
+.overlay_box25:hover {
+opacity: 1;
+}
+
+
+/*
+.box25:hover { 
+  transform: scale(1.2);
+  filter: invert(100%);
+
+}*/
+/*.box25:hover #tape_overlay { 
+  display: block;*/
+
+
+}
 .inside_text {
     font-size: 20px;
     display: flex;
@@ -1595,6 +1996,11 @@ opacity: 1;
     " b18"
     " b19"
     " b20"
+    " b21"
+    " b22"
+    " b23"
+    " b24"
+    " b25"
     " foot ";
 
   }
