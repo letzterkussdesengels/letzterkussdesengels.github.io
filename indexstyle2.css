@@ -2167,6 +2167,24 @@ opacity: 1;
   color: black;
 }
 
+.box21 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+.box21 p {
+  color: black;
+}
+
+.box22 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+.box22 p {
+  color: black;
+}
+
 
 .overlay_box1 {
   opacity: 1;
@@ -2409,6 +2427,30 @@ opacity: 1;
 
 }
 .overlay_box20 a p {
+  font-size: 20px;
+
+}
+
+.overlay_box21 {
+  opacity: 1;
+}
+.overlay_box21 p {
+  font-size: 20px;
+
+}
+.overlay_box21 a p {
+  font-size: 20px;
+
+}
+
+.overlay_box22 {
+  opacity: 1;
+}
+.overlay_box22 p {
+  font-size: 20px;
+
+}
+.overlay_box22 a p {
   font-size: 20px;
 
 }
