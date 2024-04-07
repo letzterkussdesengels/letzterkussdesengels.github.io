@@ -2187,6 +2187,15 @@ opacity: 1;
   color: black;
 }
 
+.box23 {
+  background-color: white;
+    margin-left: 40px;
+
+}
+.box23 p {
+  color: black;
+}
+
 
 .overlay_box1 {
   opacity: 1;
@@ -2453,6 +2462,18 @@ opacity: 1;
 
 }
 .overlay_box22 a p {
+  font-size: 20px;
+
+}
+
+.overlay_box23 {
+  opacity: 1;
+}
+.overlay_box23 p {
+  font-size: 20px;
+
+}
+.overlay_box23 a p {
   font-size: 20px;
 
 }
