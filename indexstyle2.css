@@ -99,6 +99,7 @@
 */
   grid-template-columns: repeat(5, 2fr);
   grid-template-rows: 18px repeat(3, 1fr) ;
+   grid-auto-rows: 25rem;
   
   grid-template-areas: 
    
@@ -740,7 +741,6 @@ opacity: 1;
 
 .overlay_box10 {
   position: relative;
-  background-image: url("lkde_tapescan.jpg");
   background-position: center;
    background-size: cover;
   top: 0px;
@@ -801,19 +801,21 @@ opacity: 1;
 }
 
 .overlay_box11 {
-  position: relative;
+   position: relative;
+  background-image: url("lkde_tapescan.jpg");
+  background-position: center;
+   background-size: cover;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+/*  background: rgba(0, 0, 0, 0.5);*/
   color: yellow;
   opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
-
 }
 
 .overlay_box11 a p{
@@ -1083,8 +1085,8 @@ opacity: 1;
 }
 
 .box15:hover { 
-/*  transform: scale(1.2);
-*/
+  transform: scale(1.2);
+
 }
 
 .box16 { 
@@ -1718,7 +1720,7 @@ opacity: 1;
 
 
 
-/*.box23:hover { 
+.box23:hover { 
   transform: scale(1.2);
   filter: invert(100%);
 
@@ -1727,7 +1729,7 @@ opacity: 1;
   display: block;
 
 
-}*/
+}
 
 .box24 { 
   grid-area: b24;
