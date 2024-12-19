@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+ }
+
+
+.background-container {
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: -100;
+ }
+
+ .background {
+    width: 60vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('./LKDE_logo1.jpg')
+ }
+
+   /* Media query for mobile devices */
+  @media screen and (max-width: 600px) {
+      .background {
+          /* Change height for mobile screens */
+          height: 50vh; /* 50% of the viewport height */
+          width: 100vw;
+      }
+  }
+
+
+.grid {
+  background-repeat: no-repeat;
+  display: grid;
+  background-position: center;
+
+
+  grid-template-columns: .1fr .9fr .1fr;
+/*  grid-template-rows: 18px 45px 100px 100px 45px 600px 25px;*/
+  grid-template-rows: 18px .2fr .1fr .1fr .2fr .5fr .2fr;
+  grid-auto-rows: 25rem;
+  
+  grid-template-areas: 
+   
+    "banner banner banner" 
+    "label-gap label-gap label-gap"
+    "label-list1 label-list2 label-list3"
+    "gap gap gap"
+    "distro-gap distro-gap distro-gap"
+    "distro-list1 distro-list2 distro-list3"   
+    "footer footer footer"
+
+     }
+
+.banner { 
+  grid-area: banner;
+  padding: 0px;
+  background-color:black;
+  color:whitesmoke;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  display: grid;
+
+}
+
+mark.highlight {
+  background-color: rgba(255, 255, 0, 0.7);;
+  color: black;
+}
+
+.label-gap { 
+  grid-area: label-gap;
+  display: grid;
+  align-items: center;
+
+}
+
+.distro-gap { 
+  grid-area: distro-gap;
+  display: grid;
+  align-items: center;
+
+}
+
+.gap { 
+  grid-area: gap;
+  display: grid;
+  justify-content: center;
+
+}
+
+.gap img { 
+   
+}
+
+.label-list1 { 
+  grid-area: label-list2;
+  display: grid;
+
+}
+
+.label-list2 { 
+  grid-area: label-list2;
+  display: grid;
+
+}
+
+.label-list3 { 
+  grid-area: label-list3;
+  display: grid;
+
+}
+
+.distro-list1 { 
+  grid-area: distro-list2;
+  display: grid;
+
+}
+
+.distro-list2 { 
+  grid-area: distro-list2;
+  display: grid;
+
+}
+
+.distro-list3 { 
+  grid-area: distro-list2;
+  display: grid;
+
+}
+
+.footer { 
+  grid-area: footer;
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+
+.label-list2 a p {
+
+  text-align: center;
+  font-size: 20px;
+  color: black;
+
+ }
+
+  @media screen and (max-width: 600px) {
+      .label-list2 a p {
+          font-size: 14px;
+      }
+  }
+
+.label-gap p {
+
+  text-align: center;
+
+
+   }   
+
+.distro-list2 a p{
+
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+      .distro-list2 a p {
+          font-size: 14px;
+      }
+  }
+
+.distro-gap p{
+
+  text-align: center;
+
+
+   }
+
+a.mailing-list {
+
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  color: black;
+
+ }
