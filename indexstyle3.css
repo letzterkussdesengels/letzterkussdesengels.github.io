@@ -41,7 +41,6 @@
 
 
   grid-template-columns: .1fr .9fr .1fr;
-/*  grid-template-rows: 18px 45px 100px 100px 45px 600px 25px;*/
   grid-template-rows: 18px .2fr .1fr .1fr .2fr .5fr .2fr;
   grid-auto-rows: 25rem;
   
@@ -56,6 +55,31 @@
     "footer footer footer"
 
      }
+
+
+ @media screen and (max-width: 600px) {
+      .grid {
+              background-repeat: no-repeat;
+              display: grid;
+              background-position: center;
+
+
+              grid-template-columns: .1fr .9fr .1fr;
+              grid-template-rows: 18px .4fr .1fr .2fr .2fr .9fr .9fr;
+              grid-auto-rows: 25rem;
+              
+              grid-template-areas: 
+               
+                "banner banner banner" 
+                "label-gap label-gap label-gap"
+                "label-list1 label-list2 label-list3"
+                "gap gap gap"
+                "distro-gap distro-gap distro-gap"
+                "distro-list1 distro-list2 distro-list3"   
+                "footer footer footer"
+
+     }
+  }    
 
 .banner { 
   grid-area: banner;
