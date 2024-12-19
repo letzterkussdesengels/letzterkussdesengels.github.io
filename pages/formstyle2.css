@@ -213,7 +213,7 @@ opacity: 1;
 
   display: grid;
   grid-template-columns: .25fr 500px 400px .25fr;
-  grid-template-rows: 50px 180px 600px 1100px 150px;
+  grid-template-rows: 50px 180px 600px 1000px 150px;
   grid-template-areas: 
     "banner banner banner banner"
     ". header header ." 
@@ -241,7 +241,8 @@ opacity: 1;
   color:whitesmoke;
   overflow: hidden;
 
-} 
+}
+
 
 .banner {
 
@@ -255,43 +256,44 @@ opacity: 1;
 }
 
 .header p {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   padding: 10px;
 
 }
 
 .leftcolumn p{
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 
 }
 
 .leftcolumn  * { 
-  font-size: 35px;
+  font-size: 39px;
   text-align: center;
 }
 
 .leftcolumn  #vinylSelector { 
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
 }
 
 
 .leftcolumn  #tapeSelector { 
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
 }
 
 .leftcolumn input {
 
     width: 350px;  
-    height: 100px;
+    height: 90px;
     font-size: 70px;
 
 }
 
 .rightcolumn {
+  font-size: 30px;
   text-align: center;
 
 }
