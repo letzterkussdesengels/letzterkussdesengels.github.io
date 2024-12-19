@@ -152,7 +152,7 @@ mark.highlight {
 
   @media screen and (max-width: 600px) {
       .label-list2 a p {
-          font-size: 14px;
+          font-size: 10px;
       }
   }
 
@@ -172,7 +172,7 @@ mark.highlight {
 
   @media screen and (max-width: 600px) {
       .distro-list2 a p {
-          font-size: 14px;
+          font-size: 10px;
       }
   }
 
