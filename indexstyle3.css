@@ -65,7 +65,7 @@
 
 
               grid-template-columns: .1fr .9fr .1fr;
-              grid-template-rows: 18px .3fr .1fr .2fr .2fr 1fr .7fr;
+              grid-template-rows: 18px .3fr .1fr .2fr .2fr 1fr .6fr;
               grid-auto-rows: 25rem;
               
               grid-template-areas: 
