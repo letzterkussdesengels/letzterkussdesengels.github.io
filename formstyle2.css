@@ -1,0 +1,373 @@
+ *{
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  color: black;
+
+ }
+
+ .banner {
+ background-color:black;
+  color:whitesmoke;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+ }
+mark.highlight {
+  background-color: rgba(255, 255, 0, 0.7);;
+  color: black;
+}
+ 
+
+.grid {
+  display: grid;
+  grid-template-columns: .2fr .5fr .5fr .2fr  ;
+  grid-template-rows: 18px .2fr 2fr .8fr;
+  grid-template-areas: 
+    "banner banner banner banner"
+    ". header header header" 
+    ". leftcolumn rightcolumn ."
+    "footer footer footer footer";
+  }
+
+
+.banner  {
+  background-color:black;
+  grid-area: banner;
+  width: 100%;
+  color:whitesmoke;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+ }
+.banner p {
+  background-color:black;
+  width: 100%;
+  color:whitesmoke;
+  overflow: hidden;
+
+} 
+
+
+.header { 
+  padding: 15px;
+  grid-area: header;
+ 
+}
+
+.header p { 
+
+  display: flex;
+  text-align: left;
+  font-size: 28px;
+}
+
+.releasedBy { 
+
+  font-size: 20px !important;
+}
+
+.leftcolumn {
+  padding: 10px;
+  grid-area: leftcolumn;
+  align-items: center;
+  overflow: hidden;
+  display: grid;
+ 
+}
+
+.rightcolumn{
+  grid-area: rightcolumn;
+  display: grid;
+  padding: 20px;
+
+}
+
+.rightcolumn p {
+  text-align: left;
+  font-size: 20px;
+
+}
+
+.rightcolumn form {
+   min-width: 100%;
+   min-height: 100%;
+   object-fit: fill;
+    
+}
+
+.rightcolumn input {
+
+    width: 250px;  
+    height: 80px;
+    font-size: 50px;
+
+}
+
+.soldOut{
+
+  font-size: 80px !important;
+  padding: 150px;
+  text-decoration: underline;
+  
+
+
+}
+
+
+#vinylSelector {
+
+    width: 15px;  
+    height: 15px;
+    font-size: 15px;
+
+}
+
+#tapeSelector {
+
+    width: 15px;  
+    height: 15px;
+    font-size: 15px;
+
+}
+
+#smallSelector {
+
+    width: 20px;  
+    height: 20px;
+    font-size: 20px;
+
+}
+
+#medSelector {
+
+    width: 20px;  
+    height: 20px;
+    font-size: 20px;
+
+}
+
+#largeSelector {
+
+    width: 20px;  
+    height: 20px;
+    font-size: 20px;
+
+}
+
+#formElem label {
+
+    font-size: 25px;
+
+}
+
+
+input.mailingCheckbox {
+
+  width: 15px;
+  height: 15px;
+
+}
+
+#selector input:checked + label:before {
+  background: white;
+  color: black;
+}
+
+#selector input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+.leftcolumn {
+  padding: 10px;
+  grid-area: leftcolumn;
+  position: relative;
+  text-align: center;
+
+
+}
+
+.leftcolumn image {
+  display: grid;
+
+}
+
+.leftcolumn_overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 96.5%;
+  height: 96.5%;
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+}
+
+.overlay_text {
+  color: yellow;
+  position: relative;
+}
+
+.leftcolumn_overlay:hover {
+opacity: 1;
+}
+
+.footer {
+  padding: 10px;
+  grid-area: footer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+.digitals:hover { 
+  background-color: black;
+  transform: scale(1.4);
+
+}
+
+.digitals:hover a p { 
+  color: white;
+
+}
+
+
+      @media only screen and (max-width: 1000px) {
+
+
+              .grid { 
+
+                display: grid;
+                grid-template-columns: .25fr 500px 400px .25fr;
+                grid-template-rows: 60px 220px 600px 750px 350px;
+                grid-template-areas: 
+                  "banner banner banner banner"
+                  ". header header ." 
+                  ". leftcolumn leftcolumn ."
+                  ". rightcolumn rightcolumn ."
+                  ". footer footer .";
+                }
+
+              .banner { 
+                grid-area: banner;
+                padding: 0px;
+                background-color:black;
+                color:whitesmoke;
+                overflow: hidden;
+                position: absolute;
+                width: 100%;
+                font-size: 100%;
+              /*  margin-right: auto;
+              */
+              }
+              .banner p {
+                background-color:black;
+                font-size: 50px;
+                width: 100%;
+                color:whitesmoke;
+                overflow: hidden;
+
+              }
+
+
+              .banner {
+
+                font-size: 50px;
+              }
+
+              .header { 
+                padding: 10px;
+                grid-area: header;
+
+              }
+
+              .header p {
+                font-size: 50px;
+                text-align: center;
+                padding: 10px;
+                display: grid;
+
+              }
+
+              .releasedBy { 
+
+                font-size: 35px !important;
+                text-align: center;
+                align-items: center;
+              }
+
+              .leftcolumn p{
+                font-size: 40px;
+                text-align: center;
+
+              }
+
+              .leftcolumn  * { 
+                font-size: 39px;
+                text-align: center;
+              }
+
+              .leftcolumn  #vinylSelector { 
+                font-size: 40px;
+                text-align: center;
+              }
+
+
+              .leftcolumn  #tapeSelector { 
+                font-size: 40px;
+                text-align: center;
+              }
+
+              .leftcolumn input {
+
+                  width: 350px;  
+                  height: 90px;
+                  font-size: 70px;
+
+              }
+
+              .rightcolumn {
+                font-size: 30px;
+                text-align: center;
+
+              }
+
+              .footer p {
+                font-size: 100px;
+                text-align: center;
+              }
+
+              .footer iframe {
+                max-width: 100%;
+
+                }
+
+              .payInstructions {
+                font-size: 100px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+              }
+
+
+                }
