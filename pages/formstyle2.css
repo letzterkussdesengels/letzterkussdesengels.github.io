@@ -13,19 +13,24 @@
   text-align: center;
   position: relative;
  }
-
+mark.highlight {
+  background-color: rgba(255, 255, 0, 0.7);;
+  color: black;
+}
  
 
 .grid {
   display: grid;
-  grid-template-columns: .25fr 400px 500px 1fr;
-  grid-template-rows: 18px 30px 500px 150px;
+  grid-template-columns: .2fr .5fr .5fr .2fr  ;
+  grid-template-rows: 18px .2fr 2fr .8fr;
   grid-template-areas: 
     "banner banner banner banner"
-    ". header header ." 
-    ". rightcolumn leftcolumn ."
-    ". footer footer .";
+    ". header header header" 
+    ". leftcolumn rightcolumn ."
+    "footer footer footer footer";
   }
+
+
 .banner  {
   background-color:black;
   grid-area: banner;
@@ -45,40 +50,53 @@
 
 
 .header { 
-  padding: 0px;
+  padding: 15px;
   grid-area: header;
  
 }
 
 .header p { 
-  
+
+  display: flex;
   text-align: left;
   font-size: 28px;
 }
 
+.releasedBy { 
+
+  font-size: 20px !important;
+}
+
 .leftcolumn {
-  padding: 0px;
+  padding: 10px;
   grid-area: leftcolumn;
-/*  justify-content: center;
-*/  align-items: center;
-  overflow: hidden
+  align-items: center;
+  overflow: hidden;
+  display: grid;
  
 }
 
-.leftcolumn p {
+.rightcolumn{
+  grid-area: rightcolumn;
+  display: grid;
+  padding: 20px;
+
+}
+
+.rightcolumn p {
   text-align: left;
   font-size: 20px;
 
 }
 
-.leftcolumn form {
+.rightcolumn form {
    min-width: 100%;
    min-height: 100%;
    object-fit: fill;
     
 }
 
-.leftcolumn input {
+.rightcolumn input {
 
     width: 250px;  
     height: 80px;
@@ -86,19 +104,30 @@
 
 }
 
+.soldOut{
+
+  font-size: 80px !important;
+  padding: 150px;
+  text-decoration: underline;
+  
+
+
+}
+
+
 #vinylSelector {
 
-    width: 20px;  
-    height: 20px;
-    font-size: 20px;
+    width: 15px;  
+    height: 15px;
+    font-size: 15px;
 
 }
 
 #tapeSelector {
 
-    width: 20px;  
-    height: 20px;
-    font-size: 20px;
+    width: 15px;  
+    height: 15px;
+    font-size: 15px;
 
 }
 
@@ -126,6 +155,20 @@
 
 }
 
+#formElem label {
+
+    font-size: 25px;
+
+}
+
+
+input.mailingCheckbox {
+
+  width: 15px;
+  height: 15px;
+
+}
+
 #selector input:checked + label:before {
   background: white;
   color: black;
@@ -145,26 +188,26 @@
 }
 
 
-.rightcolumn {
+.leftcolumn {
   padding: 10px;
-  grid-area: rightcolumn;
+  grid-area: leftcolumn;
   position: relative;
   text-align: center;
 
 
 }
 
-.rightcolumn image {
-  display: block;
+.leftcolumn image {
+  display: grid;
 
 }
 
-.rightcolumn_overlay {
+.leftcolumn_overlay {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 95%;
-  height: 96%;
+  width: 96.5%;
+  height: 96.5%;
   background: rgba(0, 0, 0, 0.5);
   color: yellow;
   opacity: 0;
@@ -180,13 +223,16 @@
   position: relative;
 }
 
-.rightcolumn_overlay:hover {
+.leftcolumn_overlay:hover {
 opacity: 1;
 }
 
 .footer {
   padding: 10px;
   grid-area: footer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -206,107 +252,122 @@ opacity: 1;
 }
 
 
-@media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: 1000px) {
 
 
-.grid { 
+              .grid { 
 
-  display: grid;
-  grid-template-columns: .25fr 500px 400px .25fr;
-  grid-template-rows: 50px 180px 600px 1000px 150px;
-  grid-template-areas: 
-    "banner banner banner banner"
-    ". header header ." 
-    ". rightcolumn rightcolumn ."
-    ". leftcolumn leftcolumn ."
-    ". footer footer .";
-  }
+                display: grid;
+                grid-template-columns: .25fr 500px 400px .25fr;
+                grid-template-rows: 60px 220px 600px 750px 350px;
+                grid-template-areas: 
+                  "banner banner banner banner"
+                  ". header header ." 
+                  ". leftcolumn leftcolumn ."
+                  ". rightcolumn rightcolumn ."
+                  ". footer footer .";
+                }
 
-.banner { 
-  grid-area: banner;
-  padding: 0px;
-  background-color:black;
-  color:whitesmoke;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  font-size: 100%;
-/*  margin-right: auto;
-*/
-}
-.banner p {
-  background-color:black;
-  font-size: 50px;
-  width: 100%;
-  color:whitesmoke;
-  overflow: hidden;
+              .banner { 
+                grid-area: banner;
+                padding: 0px;
+                background-color:black;
+                color:whitesmoke;
+                overflow: hidden;
+                position: absolute;
+                width: 100%;
+                font-size: 100%;
+              /*  margin-right: auto;
+              */
+              }
+              .banner p {
+                background-color:black;
+                font-size: 50px;
+                width: 100%;
+                color:whitesmoke;
+                overflow: hidden;
 
-}
-
-
-.banner {
-
-  font-size: 50px;
-}
-
-.header { 
-  padding: 20px;
-  grid-area: header;
-
-}
-
-.header p {
-  font-size: 50px;
-  text-align: center;
-  padding: 10px;
-
-}
-
-.leftcolumn p{
-  font-size: 40px;
-  text-align: center;
-
-}
-
-.leftcolumn  * { 
-  font-size: 39px;
-  text-align: center;
-}
-
-.leftcolumn  #vinylSelector { 
-  font-size: 40px;
-  text-align: center;
-}
+              }
 
 
-.leftcolumn  #tapeSelector { 
-  font-size: 40px;
-  text-align: center;
-}
+              .banner {
 
-.leftcolumn input {
+                font-size: 50px;
+              }
 
-    width: 350px;  
-    height: 90px;
-    font-size: 70px;
+              .header { 
+                padding: 10px;
+                grid-area: header;
 
-}
+              }
 
-.rightcolumn {
-  font-size: 30px;
-  text-align: center;
+              .header p {
+                font-size: 50px;
+                text-align: center;
+                padding: 10px;
+                display: grid;
 
-}
+              }
 
-.footer p {
-  font-size: 100px;
-  text-align: center;
-}
+              .releasedBy { 
 
-.footer iframe {
-  max-width: 100%;
+                font-size: 35px !important;
+                text-align: center;
+                align-items: center;
+              }
 
-  }
+              .leftcolumn p{
+                font-size: 40px;
+                text-align: center;
+
+              }
+
+              .leftcolumn  * { 
+                font-size: 39px;
+                text-align: center;
+              }
+
+              .leftcolumn  #vinylSelector { 
+                font-size: 40px;
+                text-align: center;
+              }
 
 
-  }
+              .leftcolumn  #tapeSelector { 
+                font-size: 40px;
+                text-align: center;
+              }
+
+              .leftcolumn input {
+
+                  width: 350px;  
+                  height: 90px;
+                  font-size: 70px;
+
+              }
+
+              .rightcolumn {
+                font-size: 30px;
+                text-align: center;
+
+              }
+
+              .footer p {
+                font-size: 100px;
+                text-align: center;
+              }
+
+              .footer iframe {
+                max-width: 100%;
+
+                }
+
+              .payInstructions {
+                font-size: 100px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+              }
+
+
+                }
