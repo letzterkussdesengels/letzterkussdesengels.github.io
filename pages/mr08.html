@@ -81,7 +81,7 @@
         </select>
         <br>    
         <br>
-        <input type="checkbox" id="mailingList" class="mailingCheckbox" name="mailingList" value="yes">
+        <input type="checkbox" id="mailingList" class="mailingCheckbox" name="mailingList" value="no">
         <label for="mailingList" style="font-size: 18px;"> Add me to the mailing list  </label><br>
 
         <br>
@@ -113,7 +113,8 @@
 
     var dateObject = new Date();
     var formattedDate = "Ordered On: "+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
-       
+    var mailingListVar = document.getElementById("mailingList").checked;
+    
       if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
           document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "" && document.getElementById("country").value != "") {  
 
@@ -126,7 +127,7 @@
                   email : document.getElementById("email").value,
                   mailingAddress : document.getElementById("mailingAddress").value,
                   country: document.getElementById("country").value,
-                  mailingList: document.getElementById("mailingList").value,
+                  mailingList: mailingListVar,
                   date : formattedDate
                 }
 
