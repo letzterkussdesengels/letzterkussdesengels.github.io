@@ -259,7 +259,7 @@ opacity: 1;
 
                 display: grid;
                 grid-template-columns: .25fr 500px 400px .25fr;
-                grid-template-rows: 60px 220px 600px 750px 350px;
+                grid-template-rows: 60px 150px 500px 850px 200px;
                 grid-template-areas: 
                   "banner banner banner banner"
                   ". header header ." 
