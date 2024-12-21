@@ -271,7 +271,7 @@ p.returnMarker {
 
                 display: grid;
                 grid-template-columns: 500px 500px;
-                grid-template-rows: 60px 800px 180px 1050px 200px;
+                grid-template-rows: 60px 800px 180px 1200px 200px;
                 grid-template-areas: 
                   "banner banner"
                   "leftcolumn leftcolumn" 
@@ -400,7 +400,7 @@ p.returnMarker {
             input.vinylBox {
 
               width: 35px!important;
-              height: 35px!important;
+              height: 35px!important; 
             
             }
 
