@@ -251,6 +251,18 @@ opacity: 1;
 
 }
 
+label.mailingCheckboxText {
+
+  font-size: 18px;
+
+}
+
+p.returnMarker {
+
+  font-size: 18px;
+
+}
+
 
       @media only screen and (max-width: 1000px) {
 
@@ -258,14 +270,14 @@ opacity: 1;
               .grid { 
 
                 display: grid;
-                grid-template-columns: .25fr 500px 400px .25fr;
-                grid-template-rows: 60px 150px 600px 850px 200px;
+                grid-template-columns: 500px 500px;
+                grid-template-rows: 60px 800px 180px 1050px 200px;
                 grid-template-areas: 
-                  "banner banner banner banner"
-                  ". header header ." 
-                  ". leftcolumn leftcolumn ."
-                  ". rightcolumn rightcolumn ."
-                  ". footer footer .";
+                  "banner banner"
+                  "leftcolumn leftcolumn" 
+                  "header header"
+                  "rightcolumn rightcolumn"
+                  "footer footer";
                 }
 
               .banner { 
@@ -302,10 +314,12 @@ opacity: 1;
               }
 
               .header p {
-                font-size: 50px;
-                text-align: center;
+                font-size: 40px;
+                text-align: justify;
+                text-justify:initial;
                 padding: 10px;
                 display: grid;
+                text-align: center;
 
               }
 
@@ -316,29 +330,23 @@ opacity: 1;
                 align-items: center;
               }
 
-              .leftcolumn p{
-                font-size: 40px;
-                text-align: center;
-
-              }
-
-              .leftcolumn  * { 
-                font-size: 39px;
+              .rightcolumn  * { 
+                font-size: 30px;
                 text-align: center;
               }
 
-              .leftcolumn  #vinylSelector { 
+              .rightcolumn  #vinylSelector { 
                 font-size: 40px;
                 text-align: center;
               }
 
 
-              .leftcolumn  #tapeSelector { 
+              .rightcolumn  #tapeSelector { 
                 font-size: 40px;
                 text-align: center;
               }
 
-              .leftcolumn input {
+              .rightcolumn input {
 
                   width: 350px;  
                   height: 90px;
@@ -346,15 +354,10 @@ opacity: 1;
 
               }
 
-              .rightcolumn {
-                font-size: 30px;
-                text-align: center;
-
-              }
-
               .footer p {
                 font-size: 100px;
                 text-align: center;
+                padding: 100px;
               }
 
               .footer iframe {
@@ -368,6 +371,45 @@ opacity: 1;
                 display: flex;
                 justify-content: center;
               }
+              #formElem label {
+
+                font-size: 35px;
+                
+            
+            }
+
+            input.mailingCheckbox {
+
+              width: 35px;
+              height: 35px;
+            
+            }
+
+            label.mailingCheckboxText {
+
+              font-size: 40px;
+            
+            }
+
+            p.returnMarker {
+
+              font-size: 80px;
+            
+            }
+
+            input.vinylBox {
+
+              width: 35px!important;
+              height: 35px!important;
+            
+            }
+
+            input.tapeBox {
+
+              width: 35px!important;
+              height: 35px!important;
+            
+            }
 
 
                 }
