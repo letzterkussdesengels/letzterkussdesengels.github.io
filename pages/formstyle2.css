@@ -270,8 +270,8 @@ p.returnMarker {
               .grid { 
 
                 display: grid;
-                grid-template-columns: 500px 500px;
-                grid-template-rows: 50px 800px 180px 1200px 200px;
+                grid-template-columns: .5fr .5fr;
+                grid-template-rows: 60px 800px 180px 1200px 400px;
                 grid-template-areas: 
                   "banner banner"
                   "leftcolumn leftcolumn" 
@@ -289,8 +289,8 @@ p.returnMarker {
                 position: absolute;
                 width: 100%;
                 font-size: 100%;
-              /*  margin-right: auto;
-              */
+               margin-right: auto;
+             
               }
               .banner p {
                 background-color:black;
