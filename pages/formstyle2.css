@@ -271,7 +271,7 @@ p.returnMarker {
 
                 display: grid;
                 grid-template-columns: .5fr .5fr;
-                grid-template-rows: 60px 1000px 180px 1140px 400px;
+                grid-template-rows: 60px 1000px 180px 1100px 400px;
                 grid-template-areas: 
                   "banner banner"
                   "leftcolumn leftcolumn" 
