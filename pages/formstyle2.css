@@ -339,7 +339,7 @@ p.returnMarker {
               .rightcolumn  { 
                 font-size: 30px;
                 text-align: center;
-                text-decoration: underline dotted red;
+                text-decoration: underline dotted red !important;
               }
 
               .rightcolumn  #vinylSelector { 
