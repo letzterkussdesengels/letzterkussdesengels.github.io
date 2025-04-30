@@ -22,7 +22,7 @@ mark.highlight {
 .grid {
   display: grid;
   grid-template-columns: .2fr .5fr .5fr .2fr  ;
-  grid-template-rows: 18px .2fr 2fr .8fr;
+  grid-template-rows: 24px .2fr 2fr .8fr;
   grid-template-areas: 
     "banner banner banner banner"
     ". header header header" 
@@ -32,13 +32,17 @@ mark.highlight {
 
 
 .banner  {
-  background-color:black;
   grid-area: banner;
-  width: 100%;
+  padding: 0px;
+  background-color:black;
   color:whitesmoke;
-  text-align: center;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  display: grid;
+  font-size: 20px;
+  /* font-style:italic; */
+  font-family:'Times New Roman', Times, serif;
  }
 .banner p {
   background-color:black;
