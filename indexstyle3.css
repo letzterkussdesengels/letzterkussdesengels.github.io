@@ -19,7 +19,7 @@
 
  .background {
     width: 60vw;
-    height: 100vh;
+    height: 105vh;
     background-size: cover;
     background-image: url('./LKDE_logo1.jpg')
  }
@@ -41,7 +41,7 @@
 
 
   grid-template-columns: .1fr .9fr .1fr;
-  grid-template-rows: 18px .2fr .1fr .05fr .15fr .5fr .2fr;
+  grid-template-rows: 24px .2fr .1fr .05fr .15fr .5fr .2fr;
   grid-auto-rows: 25rem;
   
   grid-template-areas: 
@@ -90,6 +90,9 @@
   position: absolute;
   width: 100%;
   display: grid;
+  font-size: 20px;
+  /* font-style:italic; */
+  font-family:'Times New Roman', Times, serif;
 
 }
 
