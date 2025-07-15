@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link rel="stylesheet" href="formstyle2.css">
+    </head>
+  
+  
+
+  
+<body>  
+
+ <div class="grid"> 
+  <p class= "banner">
+  letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.letzterkussdesengels.site.</p>
+  
+  
+  
+  <div class="header">  
+     <p > LKDE5: Midnight Climax - Soul Crusher - Vinyl 7" Lathe [PWYC + Shipping] </p>
+     <p class="releasedBy"></pclass> released by Letzter Kuss des Engels</p>
+   </div>
+
+   <div class="leftcolumn">
+     <img src="lkde5A.png" style="height:100%;width:100%;" alt="lkde5">
+     <div class="leftcolumn_overlay">
+      <a href="https://www.discogs.com/label/3030175-Letzter-Kuss-Des-Engels?page=1">
+          <p style="color:whitesmoke;background-color: black;text-align: ;"> https://www.discogs.com/label/3030175-Letzter-Kuss-Des-Engels?page=1</p>
+        </a>    
+        </div>
+      </div>
+
+
+  <div class="rightcolumn">
+    <form id="formElem">            
+
+        <label for="firstName">First name:</label><br>
+        <textarea rows="1" cols="40" id ="firstName" for="firstName"></textarea><br>
+        <label for="lastName">Last name:</label><br>
+        <textarea rows="1" cols="40" id ="lastName" for="lastName"></textarea><br>
+        <label for="email">Email Address:</label><br>
+        <textarea rows="1" cols="40" id ="email" for="email"></textarea><br>
+        <label for="mailingAddress">Mailing Address:</label><br>
+        <textarea rows = "5" id="mailingAddress" cols = "40" for="mailingAddress"></textarea><br><br>
+        <label for="country">Country:</label><br>
+        <select id="country" for="country">
+            <option value=""> -- Select One </option>
+            <option value="be"> Belgium </option>
+            <option value="bg"> Bulgaria </option>
+            <option value="cz"> Czechia </option>
+            <option value="dk"> Denmark </option>
+            <option value="de"> Germany </option>
+            <option value="ee"> Estonia </option>
+            <option value="ie"> Ireland </option>
+            <option value="el"> Greece </option>
+            <option value="es"> Spain </option>
+            <option value="fr"> France </option>
+            <option value="hr"> Croatia </option>
+            <option value="it"> Italy </option>
+            <option value="is"> Iceland </option>
+            <option value="cy"> Cyprus </option>
+            <option value="lv"> Latvia </option>
+            <option value="li"> Liechtenstein </option>
+            <option value="lt"> Lithuania </option>
+            <option value="lu"> Luxembourg </option>
+            <option value="hu"> Hungary </option>
+            <option value="mt"> Malta </option>
+            <option value="nl"> Netherlands </option>
+            <option value="no"> Norway </option>
+            <option value="at"> Austria </option>
+            <option value="pl"> Poland </option>
+            <option value="pt"> Portugal </option>
+            <option value="ro"> Romania </option>
+            <option value="ru"> Russia </option>
+            <option value="si"> Slovenia </option>
+            <option value="sk"> Slovakia </option>
+            <option value="ch"> Switzerland </option>
+            <option value="fi"> Finland </option>
+            <option value="se"> Sweden </option>
+            <option value="tr"> Turkey </option>
+            <option value="uk"> United Kingdom </option>
+            <option value="us"> United States </option>
+            
+          </select>
+          <br>    
+          <br>
+          <input type="checkbox" id="mailingList" class="mailingCheckbox" name="mailingList" value="no">
+          <label for="mailingList" class="mailingCheckboxText"> Add me to the mailing list  </label><br>
+
+          <br>
+          <input id="submit" type="button" value="Submit"><br><br>
+          
+        <p class="payInstructions"> <mark class="highlight">**you'll get an email with instructions for how to pay**</mark> </p>
+      
+      </form>
+      <!-- <p class="soldOut"><mark class="highlight"> sold out</mark> </p> -->
+
+      <!-- <a href="https://nickjersey.bandcamp.com/album/dj-nick-jersey-hater">
+        <p style="text-align: center;font-size: 90px;text-decoration: underline dotted red;">digitals here </p>
+      </a> -->
+          </div>
+
+       
+
+
+     <div class="footer">
+        <iframe width="1265" height="140" src="https://www.youtube.com/embed/3qW_u3PExxo?si=z3c8_c8tx0SJKrVn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <br>      
+      <a href="../index.html">
+          <p style="text-align: center;font-size: 40px;"><mark class="highlight"> <-> return</mark> </p>
+        </a>
+        <br>
+        <br>
+     </div>
+   
+    </div>
+  </body>
+
+  <script>
+  document.getElementById("submit").onclick =  async (e) => {
+
+    var dateObject = new Date();
+    var formattedDate = "Ordered On: "+dateObject.getDate()+"/"+(dateObject.getMonth()+1)+"/"+dateObject.getFullYear()+" "+dateObject.getHours()+":"+dateObject.getMinutes()+ ":"+dateObject.getSeconds();
+    var mailingListVar = document.getElementById("mailingList").checked;   
+ 
+
+      if (document.getElementById("firstName").value != "" && document.getElementById("lastName").value != "" &&
+          document.getElementById("email").value != "" && document.getElementById("mailingAddress").value != "" && document.getElementById("country").value != "") {  
+
+                const body = {
+                  key : "lkde5",
+                  price: "20", 
+                  releaseType: "tape",
+                  firstName : document.getElementById("firstName").value,
+                  lastName : document.getElementById("lastName").value,
+                  email : document.getElementById("email").value,
+                  mailingAddress : document.getElementById("mailingAddress").value,
+                  country: document.getElementById("country").value,
+                  mailingList: mailingListVar,
+                  date : formattedDate
+                }
+
+                let response = await fetch('https://6j5whe5ni9.execute-api.us-east-2.amazonaws.com/prod/orders', {
+                    method: 'POST',
+                    body: JSON.stringify(body), 
+                });
+         
+                if (response.status === 400) {
+                    // console.log("I am sold out");
+                    window.location = "soldOut.html";
+                } else if (response.status === 200) {
+                    // console.log(response);
+                    window.location = "orderComplete.html";
+                } else {
+                  console.error('Network Error ):');
+                }
+            }
+        else {
+          alert("you forgot something");
+        }
+      }
+
+ 
+  </script>
+  
+</html>
