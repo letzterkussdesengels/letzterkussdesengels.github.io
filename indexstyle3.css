@@ -41,7 +41,7 @@
 
 
   grid-template-columns: .1fr .9fr .1fr;
-  grid-template-rows: 24px .2fr .1fr .015fr .15fr .5fr .2fr;
+  grid-template-rows: 24px .2fr .1fr .015fr .15fr .5fr .15fr .1fr .1fr;
   grid-auto-rows: 25rem;
   
   grid-template-areas: 
@@ -51,7 +51,9 @@
     "label-list1 label-list2 label-list3"
     "gap gap gap"
     "distro-gap distro-gap distro-gap"
-    "distro-list1 distro-list2 distro-list3"   
+    "distro-list1 distro-list2 distro-list3" 
+    "merch-gap merch-gap merch-gap"
+    "merch-list1 merch-list2 merch-list3"   
     "footer footer footer"
 
      }
@@ -65,7 +67,7 @@
 
 
               grid-template-columns: .1fr .9fr .1fr;
-              grid-template-rows: 18px .3fr .1fr .2fr .2fr 1fr .6fr;
+              grid-template-rows: 18px .3fr .1fr .2fr .2fr 1fr .2fr .1fr .6fr;
               grid-auto-rows: 25rem;
               
               grid-template-areas: 
@@ -75,7 +77,9 @@
                 "label-list1 label-list2 label-list3"
                 "gap gap gap"
                 "distro-gap distro-gap distro-gap"
-                "distro-list1 distro-list2 distro-list3"   
+                "distro-list1 distro-list2 distro-list3" 
+                "merch-gap merch-gap merch-gap"
+                "merch-list1 merch-list2 merch-list3"    
                 "footer footer footer"
 
      }
@@ -110,6 +114,13 @@ mark.highlight {
 
 .distro-gap { 
   grid-area: distro-gap;
+  display: grid;
+  align-items: center;
+
+}
+
+.merch-gap { 
+  grid-area: merch-gap;
   display: grid;
   align-items: center;
 
@@ -162,6 +173,24 @@ mark.highlight {
 
 }
 
+.merch-list1 { 
+  grid-area: merch-list2;
+  display: grid;
+
+}
+
+.merch-list2 { 
+  grid-area: merch-list2;
+  display: grid;
+
+}
+
+.merch-list3 { 
+  grid-area: merch-list2;
+  display: grid;
+
+}
+
 .footer { 
   grid-area: footer;
   display: grid;
@@ -181,6 +210,10 @@ mark.highlight {
       .label-list2 a p {
           font-size: 10px;
       }
+
+      .merch-list2 a p {
+          font-size: 10px;
+      }
   }
 
 .label-gap p {
@@ -197,8 +230,19 @@ mark.highlight {
   color: black;
   }
 
+  .merch-list2 a p{
+
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  }
+
   @media screen and (max-width: 600px) {
       .distro-list2 a p {
+          font-size: 10px;
+      }
+
+      .merch-list2 a p {
           font-size: 10px;
       }
   }
@@ -209,6 +253,13 @@ mark.highlight {
 
 
    }
+
+ .merch-gap p{
+
+  text-align: center;
+
+
+   }  
 
 a.mailing-list {
 
